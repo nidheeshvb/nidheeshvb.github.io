@@ -80,27 +80,27 @@
 
                                     </a>
                                     <div class="header__top-lang-dropdown">
-                                        <button class="header__top-lang" aria-label="Change language" aria-haspopup="true"
+                                        <button class="header__top-lang" aria-label="Change language" aria-haspopup="listbox"
                                         aria-expanded="false">EN</button>
-                                        <ul class="header__top-lang-list" hidden>
-                                            <li>
-                                                <button type="button" data-lang="fr">FR <span class="arrow"><img
+                                        <ul class="header__top-lang-list" role="listbox" hidden>
+                                            <li role="presentation">
+                                                <button type="button" role="option" aria-selected="false" data-lang="fr">FR <span class="arrow"><img src="./images/chevron-right.svg"
 
-                                                src="./images/chevron-right.svg" alt="arrow right"></span>
-
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button type="button" data-lang="de">DE <span class="arrow"><img
-
-                                                src="./images/chevron-right.svg" alt="arrow right"></span>
+                                                alt="arrow right"></span>
 
                                                 </button>
                                             </li>
-                                            <li>
-                                                <button type="button" data-lang="it">IT <span class="arrow"><img
+                                            <li role="presentation">
+                                                <button type="button" role="option" aria-selected="false" data-lang="de">DE <span class="arrow"><img src="./images/chevron-right.svg"
 
-                                                src="./images/chevron-right.svg" alt="arrow right"></span>
+                                                alt="arrow right"></span>
+
+                                                </button>
+                                            </li>
+                                            <li role="presentation">
+                                                <button type="button" role="option" aria-selected="false" data-lang="it">IT <span class="arrow"><img src="./images/chevron-right.svg"
+
+                                                alt="arrow right"></span>
 
                                                 </button>
                                             </li>
@@ -981,7 +981,8 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <button class="header__search-btn" aria-label="Open search"> <span class="header__search-icon" aria-hidden="true">
+                            <button class="header__search-btn" aria-label="Open search" aria-haspopup="dialog"
+                            aria-controls="search-dialog"> <span class="header__search-icon" aria-hidden="true">
 
                             <img src="./images/search.svg" alt="search icon" />
 
@@ -1521,6 +1522,17 @@
 
         </div> --></div>
             <!-- End Mobile Header -->
+            <div id="search-dialog" class="header__search-dialog" role="dialog" aria-modal="true"
+            aria-label="Search" hidden>
+                <form role="search" aria-label="Site search" method="get" action="/search">
+                    <label for="search-input" class="visually-hidden">Search</label>
+                    <input id="search-input" name="q" type="search" placeholder="Search..."
+                    required autocomplete="off" />
+                    <button type="submit" aria-label="Submit search">
+                        <img src="./images/search.svg" alt="" aria-hidden="true" />
+                    </button>
+                </form>
+            </div>
         </header>
         <main>
             <div class="container" style="padding:400px 0 100px; text-align: center;">Body contents</div>
