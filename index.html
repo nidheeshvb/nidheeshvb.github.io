@@ -42,10 +42,12 @@
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
         <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://www.groupemutuel.ch/.resources/gm-templating-rebrand/webresources/css/min/all-critical.min.css"
+        />
         <link rel="stylesheet" href="./css/main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />--></head>
@@ -148,20 +150,25 @@
                                                         <ul class="megamenu__nav" role="tablist">
                                                             <li role="presentation">
                                                                 <button class="megamenu__nav-link megamenu__nav-link--active" role="tab"
-                                                                aria-selected="true" aria-controls="tab-insurance-products" id="tab-insurance-products-trigger">Insurance Products</button>
+                                                                aria-selected="true" aria-controls="tab-insurance-products" id="tab-insurance-products-trigger"> <span>Insurance Products</span>
+                                                                </button>
                                                             </li>
                                                             <li role="presentation">
                                                                 <button class="megamenu__nav-link" role="tab" aria-selected="false" aria-controls="tab-supplementary"
-                                                                id="tab-supplementary-trigger">Supplementary Insurance</button>
+                                                                id="tab-supplementary-trigger"> <span>Supplementary Insurance</span>
+                                                                </button>
                                                             </li>
                                                             <li role="presentation">
                                                                 <button class="megamenu__nav-link" role="tab" aria-selected="false" aria-controls="tab-other-solutions"
-                                                                id="tab-other-solutions-trigger">Other Insurance Solutions</button>
+                                                                id="tab-other-solutions-trigger"> <span>Other Insurance Solutions</span>
+                                                                </button>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <button class="megamenu__nav-link" role="tab" aria-selected="false" aria-controls="tab-based-on-life"
+                                                                id="tab-based-on-life-trigger"> <span>Based on your life</span>
+                                                                </button>
                                                             </li>
                                                         </ul>
-                                                        <div class="megamenu__sidebar-btn-wrap">
-                                                            <button class="megamenu__sidebar-btn">Based on your life situation</button>
-                                                        </div>
                                                     </nav>
                                                     <div class="megamenu__content">
                                                         <div class="megamenu__tab-panel" id="tab-insurance-products" role="tabpanel"
@@ -261,6 +268,33 @@
                                                             <div class="megamenu__cards">
                                                                 <div class="megamenu__card">
                                                                      <h5 class="megamenu__card-title">Other Insurance Solutions
+
+                                                            </h5>
+                                                                    <p class="megamenu__card-desc">Specialized insurance solutions for unique situations</p> <a href="#" class="megamenu__card-btn">Get a Quote <span
+
+                                                                    aria-hidden="true">
+
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20"
+
+                                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                                                                        <path
+
+                                                                            d="M13.125 10.75H4.74958C4.53722 10.75 4.35917 10.6785 4.21542 10.5356C4.07181 10.3927 4 10.2156 4 10.0044C4 9.79313 4.07181 9.61459 4.21542 9.46876C4.35917 9.32292 4.53722 9.25001 4.74958 9.25001H13.125L9.45396 5.57896C9.3041 5.4291 9.22917 5.25348 9.22917 5.05209C9.22917 4.8507 9.30556 4.67028 9.45833 4.51084C9.61111 4.36473 9.78819 4.29167 9.98958 4.29167C10.191 4.29167 10.3667 4.36681 10.5169 4.51709L15.4708 9.4773C15.5458 9.55244 15.6007 9.63382 15.6354 9.72146C15.6701 9.8091 15.6875 9.90306 15.6875 10.0033C15.6875 10.1035 15.6701 10.1974 15.6354 10.2852C15.6007 10.3729 15.5486 10.4514 15.4792 10.5208L10.5208 15.4792C10.3681 15.6319 10.1944 15.7049 10 15.6979C9.80556 15.691 9.63194 15.6144 9.47917 15.4683C9.32639 15.3089 9.25 15.1273 9.25 14.9235C9.25 14.7199 9.32639 14.544 9.47917 14.3958L13.125 10.75Z"
+
+                                                                            fill="#003D4C" />
+
+                                                                    </svg>
+
+                                                                </span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="megamenu__tab-panel" id="tab-based-on-life" role="tabpanel"
+                                                        aria-labelledby="tab-based-on-life-trigger" hidden>
+                                                            <div class="megamenu__cards">
+                                                                <div class="megamenu__card">
+                                                                     <h5 class="megamenu__card-title">Based on your life
 
                                                             </h5>
                                                                     <p class="megamenu__card-desc">Specialized insurance solutions for unique situations</p> <a href="#" class="megamenu__card-btn">Get a Quote <span
@@ -1489,7 +1523,7 @@
             <!-- End Mobile Header -->
         </header>
         <main>
-            <div class="container" style="padding:400px 0; text-align: center;">Body contents</div>
+            <div class="container" style="padding:400px 0 100px; text-align: center;">Body contents</div>
         </main>
         <!-- <footer>
     <p>Footer</p>
