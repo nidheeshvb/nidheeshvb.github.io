@@ -41,14 +41,16 @@
         />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="theme-color" content="#ffffff" />
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="https://www.groupemutuel.ch/.resources/gm-templating-rebrand/webresources/css/min/all-critical.min.css"
-        />
-        <link rel="stylesheet" href="./css/main.css" />
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://www.groupemutuel.ch/.resources/gm-templating-rebrand/webresources/css/min/all-critical.min.css"
+        />
+        <!-- New file -->
+        <link rel="stylesheet" href="./css/header-style.css" />
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />--></head>
     
@@ -60,14 +62,15 @@
                     <div class="row">
                         <nav class="header__top-nav" aria-label="Top bar navigation">
                             <ul class="header__top-list">
-                                <li>
-                                    <button class="header__top-btn header__top-btn--active" aria-current="page">Client privés</button>
+                                <li><a href="/clients-prives" class="header__top-btn header__top-btn--active"
+                                    aria-current="page">Client privés</a>
+
                                 </li>
-                                <li>
-                                    <button class="header__top-btn">Client privés</button>
+                                <li><a href="/clients-enterprises" class="header__top-btn">Client enterprises</a>
+
                                 </li>
-                                <li>
-                                    <button class="header__top-btn">Client privés</button>
+                                <li><a href="/groupe-mutuel" class="header__top-btn">Groupe Mutuel</a>
+
                                 </li>
                             </ul>
                             <div class="header__top-actions"> <a href="#contact" class="header__top-link">Contact Us <span aria-hidden="true"><img
@@ -83,26 +86,20 @@
                                         <button class="header__top-lang" aria-label="Change language" aria-haspopup="listbox"
                                         aria-expanded="false">EN</button>
                                         <ul class="header__top-lang-list" role="listbox" hidden>
-                                            <li role="presentation">
-                                                <button type="button" role="option" aria-selected="false" data-lang="fr">FR <span class="arrow"><img src="./images/chevron-right.svg"
+                                            <li role="presentation"> <a href="?lang=fr" class="header__top-lang-link" role="option" aria-selected="false"
+                                                data-lang="fr">FR <span class="arrow" aria-hidden="true"><img
 
-                                                alt="arrow right"></span>
-
-                                                </button>
+                                                src="./images/chevron-right.svg" alt=""></span></a>
                                             </li>
-                                            <li role="presentation">
-                                                <button type="button" role="option" aria-selected="false" data-lang="de">DE <span class="arrow"><img src="./images/chevron-right.svg"
+                                            <li role="presentation"> <a href="?lang=de" class="header__top-lang-link" role="option" aria-selected="false"
+                                                data-lang="de">DE <span class="arrow" aria-hidden="true"><img
 
-                                                alt="arrow right"></span>
-
-                                                </button>
+                                                src="./images/chevron-right.svg" alt=""></span></a>
                                             </li>
-                                            <li role="presentation">
-                                                <button type="button" role="option" aria-selected="false" data-lang="it">IT <span class="arrow"><img src="./images/chevron-right.svg"
+                                            <li role="presentation"> <a href="?lang=it" class="header__top-lang-link" role="option" aria-selected="false"
+                                                data-lang="it">IT <span class="arrow" aria-hidden="true"><img
 
-                                                alt="arrow right"></span>
-
-                                                </button>
+                                                src="./images/chevron-right.svg" alt=""></span></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1007,19 +1004,19 @@
                             </button>
                             <ul class="header__mobile-client-list" id="mobile-client-list" role="listbox"
                             hidden>
-                                <li>
-                                    <button type="button" role="option">Client enterprises <span class="arrow"><img
+                                <li><a href="/clients-enterprises" class="header__mobile-client-link" role="option">Client
 
-                                        src="./images/chevron-right.svg" alt="arrow right" /></span>
+                                enterprises <span class="arrow" aria-hidden="true"><img src="./images/chevron-right.svg"
 
-                                    </button>
+                                        alt="" /></span></a>
+
                                 </li>
-                                <li>
-                                    <button type="button" role="option">Groupe Mutuel <span class="arrow"><img
+                                <li><a href="/groupe-mutuel" class="header__mobile-client-link" role="option">Groupe Mutuel
 
-                                        src="./images/chevron-right.svg" alt="arrow right" /></span>
+                                <span class="arrow" aria-hidden="true"><img src="./images/chevron-right.svg"
 
-                                    </button>
+                                        alt="" /></span></a>
+
                                 </li>
                             </ul>
                         </div>
@@ -1049,33 +1046,25 @@
                             <img src="./images/globe.svg" alt="" aria-hidden="true" />
                         </button>
                         <ul class="mobile-lang-list" id="mobile-lang-list" role="listbox" hidden>
-                            <li>
-                                <button type="button" data-lang="en" role="option">EN <span><img
+                            <li><a href="?lang=en" class="mobile-lang-link" data-lang="en" role="option">EN <span
 
-                                    src="./images/chevron-right.svg" alt="arrow right" /></span>
+                                aria-hidden="true"><img src="./images/chevron-right.svg" alt="" /></span></a>
 
-                                </button>
                             </li>
-                            <li>
-                                <button type="button" data-lang="fr" role="option">FR <span><img
+                            <li><a href="?lang=fr" class="mobile-lang-link" data-lang="fr" role="option">FR <span
 
-                                    src="./images/chevron-right.svg" alt="arrow right" /></span>
+                                aria-hidden="true"><img src="./images/chevron-right.svg" alt="" /></span></a>
 
-                                </button>
                             </li>
-                            <li>
-                                <button type="button" data-lang="de" role="option">DE <span><img
+                            <li><a href="?lang=de" class="mobile-lang-link" data-lang="de" role="option">DE <span
 
-                                    src="./images/chevron-right.svg" alt="arrow right" /></span>
+                                aria-hidden="true"><img src="./images/chevron-right.svg" alt="" /></span></a>
 
-                                </button>
                             </li>
-                            <li>
-                                <button type="button" data-lang="it" role="option">IT <span><img
+                            <li><a href="?lang=it" class="mobile-lang-link" data-lang="it" role="option">IT <span
 
-                                    src="./images/chevron-right.svg" alt="arrow right" /></span>
+                                aria-hidden="true"><img src="./images/chevron-right.svg" alt="" /></span></a>
 
-                                </button>
                             </li>
                         </ul>
                         <button class="header__mobile-btn" id="mobile-menu-btn" aria-label="Open menu"
@@ -1499,28 +1488,7 @@
                         </ul>
                     </nav>
                 </div>
-                <!-- <div class="header__mobile-overlay" id="mobile-search-overlay" role="dialog"
-                aria-modal="true" aria-label="Search" tabindex="-1" hidden>
-
-            <button class="header__mobile-close" aria-label="Close search" data-close-overlay>&times;</button>
-
-            <form role="search" aria-label="Site search" method="get" action="/search">
-
-                <label for="mobile-search-input" class="visually-hidden">Search</label>
-
-                <input id="mobile-search-input" name="q" type="search" placeholder="Search..." required
-
-                    autocomplete="off" />
-
-                <button type="submit" aria-label="Submit search">
-
-                    <img src="./images/search.svg" alt="" aria-hidden="true" />
-
-                </button>
-
-            </form>
-
-        </div> --></div>
+            </div>
             <!-- End Mobile Header -->
             <div id="search-dialog" class="header__search-dialog" role="dialog" aria-modal="true"
             aria-label="Search" hidden>
@@ -1535,12 +1503,12 @@
             </div>
         </header>
         <main>
-            <div class="container" style="padding:400px 0 100px; text-align: center;">Body contents</div>
+            <div class="container" style="padding:400px 0 100px; text-align: center; min-height: 200vh;">Body contents</div>
         </main>
         <!-- <footer>
     <p>Footer</p>
 </footer> -->
-        <script src="./js/main.js"></script>
+        <script src="./js/header.js"></script>
     </body>
 
 </html>
