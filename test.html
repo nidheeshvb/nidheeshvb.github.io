@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"
+        />
+        <!-- Meta:site specific-->
+        <title>KFH-Landing pages</title>
+        <meta name="author" content="NVB" />
+        <meta name="description" content="Description of your content here" />
+        <meta name="format-detection" content="telephone=no">
+        <!-- Open Graph Data for Facebook -->
+        <meta property="og:title" content="Title Of Your Content Here" />
+        <meta property="og:description" content="Description of your content here"
+        />
+        <meta property="og:url" content="http://www.yoursite.com/yourcontent.html"
+        />
+        <meta property="og:image" content="http://www.yoursite.com/yourimage.jpg"
+        />
+        <meta property="og:site_name" content="The Name Of Your Site" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <!-- Twitter cards for twitter.com -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Title Of Your Content Here" />
+        <meta name="twitter:description" content="Description of your content here"
+        />
+        <meta name="twitter:site" content="@yourusername" />
+        <meta name="twitter:image" content="http://www.yoursite.com/yourimage.jpg"
+        />
+        <meta name="twitter:creator" content="@yourusername" />
+        <!-- favicon and device icons -->
+        <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png"
+        sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="images/favicon/site.webmanifest" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+        rel="stylesheet">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/vendor.css" />
+    </head>
+    
+    <body class="krp">
+        <!-- Component: Header -->
+        <header class="site-header">
+            <!-- Header: top -->
+            <div class="site-header-top">
+                <div class="container">
+                    <!-- Left-side content -->
+                    <div class="site-header-top--left"> <a href="#" class="logo">
+
+                    <img src="images/site-logo.svg" alt="Kuwait Finance House-logo" class="logo-desktop">
+
+                    <img src="images/logo-mobile.svg" alt="Kuwait Finance House-logo" class="logo-mobile">
+
+                </a>
+                        <nav class="nav-secondary">
+                            <ul>
+                                <li><a href="#" class="active"><span>Personal Banking<span></a>
+
+                                </li>
+                                <li><a href="#"><span>Private Banking</span></a>
+
+                                </li>
+                                <li><a href="#"><span>Corporate Banking</span></a>
+
+                                </li>
+                                <li><a href="#"><span>KFH Auto</span></a>
+
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- right-side content -->
+                    <div class="site-header-top--right">
+                        <!-- Moble hamburger icon -->
+                        <div class="hamburger" id="hamburger"> <span class="line"></span> <span class="line"></span> <span class="line"></span>
+                        </div>
+                        <!-- Mobile dropdown close icon:new -->
+                        <div class="dropdown-close" id="drop-close"> <span class="line"></span> <span class="line"></span> <span class="line"></span>
+                        </div>
+                        <!-- secondary navigation sub -->
+                        <nav class="nav-secondary-sub">
+                            <ul>
+                                <li><a href="#">Contact us</a>
+
+                                </li>
+                                <li><a href="#">Branch & ATM locator</a>
+
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- Language switcher -->
+                        <div class="language-switcher"> <a href="#" class="lang-switch"><span>ع</span></a>
+                        </div>
+                        <!-- Search -->
+                        <div class="search-box">
+                            <button id="search-button" class="search-toggle"> <span class="icon-search"><img src="images/icon-search.svg" alt="Search icon"></span>
+                            </button>
+                            <div id="search-container" class="search-container">
+                                <div class="language-switcher"> <a href="#" class="lang-switch"><span>ع</span></a>
+                                </div>
+                                <div class="search-box--inner">
+                                    <input type="text" placeholder="Search" class="search-input" />
+                                    <button id="close-button" class="close-btn">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Country switcher -->
+                        <div class="country-switcher">
+                            <div class="dropdown-container">
+                                <div class="dropdown-header" data-dropdown="dropdown1"> <i class="icon-globe"><img src="images/icon-globe.svg" alt="Globe icon"></i>
+                                </div>
+                                <div class="dropdown-content" id="dropdown1">
+                                    <ul class="list-unstyled">
+                                        <li> <a href="#" class="country-name">
+
+                                        <i class="icon-flag"><img src="images/flags/flag-germany.png" alt="Germany"></i>
+
+                                        KFH Germany
+
+                                    </a>
+                                        </li>
+                                        <li><a href="#" class="country-name">
+
+                                        <i class="icon-flag"><img src="images/flags/flag-turkey.png" alt="Germany"></i>
+
+                                        KFH Turkey
+
+                                    </a>
+                                        </li>
+                                        <li><a href="#" class="country-name"> <i class="icon-flag"><img
+
+                                                src="images/flags/flag-malasia.png" alt="Germany"></i>
+
+                                        KFH Malaysia
+
+                                    </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Customer login - Dropdown -->
+                        <div class="dropdown-customer">
+                            <div class="dropdown-container">
+                                <div class="dropdown-header" data-dropdown="dropdown2">
+                                    <div class="btn-dropdown">
+                                        <div class="mobile-view-only">
+                                            <img src="images/icons/icon-avatar.svg" alt="icon-avatar">
+                                        </div>
+                                        <div class="desktop-view-only"> <span>Customer login</span>  <i class="icon-chevron-bottom"><img
+
+                                            src="images/icon-chervron-green.svg" alt="icon arrow down"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown-content" id="dropdown2">
+                                    <ul class="list-unstyled">
+                                        <li><a href="#" class="link-with-arrow">KFH Online Retail Banking Services</a>
+
+                                        </li>
+                                        <li><a href="#" class="link-with-arrow">KFH Online Corporate Banking Services</a>
+
+                                        </li>
+                                        <li><a href="#" class="link-with-arrow">KFH Online Trade Service</a>
+
+                                        </li>
+                                        <li><a href="#" class="link-with-arrow">Skiplino – Book your branch appointment</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header:bottom -->
+            <div class="menu-main--content">
+                <div class="container">
+                    <!-- Start: Mobile only content -->
+                    <nav class="nav-secondary desktop-hidden">
+                        <ul class="horizontal-list">
+                            <li class="link-active"><a href="#">Personal Banking</a>
+
+                            </li>
+                            <li><a href="#">Private Banking</a>
+
+                            </li>
+                            <li><a href="#">Corporate Banking</a>
+
+                            </li>
+                            <li><a href="#">KFH Auto</a>
+
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- End: Mobile only content-->
+                    <nav class="primary-nav">
+                        <div class="mobile-only-heading"> <a href="#">Explore Personal banking</a>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
+
+                            <img src="images/menu-icon/icon-accounts.svg" alt="icon" class="icon-normal">
+
+                            <img src="images/menu-icon/icon-accounts-green.svg" alt="icon" class="icon-hover">
+
+                        </i> <a href="#" target="_self">Accounts</a>
+                                <span
+                                class="menu-arrow"></span>
+                                    <div class="nav-dropdown">
+                                        <div class="go__back">
+                                            <icon class="icon-back"></icon><a href="#">Accounts</a>
+                                        </div>
+                                        <ul>
+                                            <li class="nav-dropdown-item"><a href="#">"Current" Account</a>
+
+                                            </li>
+                                            <li class="nav-dropdown-item"><a href="#">"Electron" Account</a>
+
+                                            </li>
+                                            <li class="nav-dropdown-item"><a href="#"> "Saving" Account</a>
+
+                                            </li>
+                                            <li class="nav-dropdown-item"><a href="#"> "Alrabeh" Account</a>
+
+                                            </li>
+                                            <li class="nav-dropdown-item"><a href="#">"Al-Hassad" Account</a>
+
+                                            </li>
+                                            <li class="nav-dropdown-item"><a href="#"> "Baiti" Account</a>
+
+                                            </li>
+                                            <li class="nav-dropdown-item"><a href="#">"Gold" Account</a>
+
+                                            </li>
+                                            <li class="nav-dropdown-item"><a href="#"> "AL-AMIL" Account</a>
+
+                                            </li>
+                                            <li class="nav-dropdown-item"><a href="#">Profits Announcement</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                            </li>
+                            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
+
+                            <img src="images/menu-icon/icon-tiers.svg" alt="icon" class="icon-normal">
+
+                            <img src="images/menu-icon/icon-tiers-green.svg" alt="icon" class="icon-hover">
+
+                        </i> <a href="#">Banking Tiers</a> <span class="menu-arrow"></span>
+                                <div
+                                class="nav-dropdown">
+                                    <div class="go__back">
+                                        <icon class="icon-back"></icon><a href="#">Banking Tiers</a>
+                                    </div>
+                                    <ul>
+                                        <li class="nav-dropdown-item"><a href="#">"Al Ruwad" Program</a>
+
+                                        </li>
+                                        <li class="nav-dropdown-item"><a href="#">"Al Tamayoz" Program</a>
+
+                                        </li>
+                                        <li class="nav-dropdown-item"><a href="#">"Al Rubban" Program for Men</a>
+
+                                        </li>
+                                        <li class="nav-dropdown-item"><a href="#">"Al Sundus" Program for Women</a>
+
+                                        </li>
+                                        <li class="nav-dropdown-item"><a href="#">"Hesabi" For Youth</a>
+
+                                        </li>
+                                        <li class="nav-dropdown-item"><a href="#">"Baiti" Program for Kids</a>
+
+                                        </li>
+                                        <li class="nav-dropdown-item"><a href="#">Banking Segments Offers & Promotions</a>
+
+                                        </li>
+                                    </ul>
+                </div>
+                </li>
+                <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
+
+                            <img src="images/menu-icon/icon-finance.svg" alt="icon" class="icon-normal">
+
+                            <img src="images/menu-icon/icon-finance-green.svg" alt="icon" class="icon-hover">
+
+                        </i> <a href="#">Financing</a> <span class="menu-arrow"></span>
+                    <div
+                    class="nav-dropdown">
+                        <div class="go__back">
+                            <icon class="icon-back"></icon><a href="#">Financing</a>
+                        </div>
+                        <ul>
+                            <li class="nav-dropdown-item"><a href="#">Installment Finance</a>
+
+                            </li>
+                            <li class="nav-dropdown-item"><a href="#">Consumer Finance</a>
+
+                            </li>
+                            <li class="nav-dropdown-item"><a href="#">Rescheduling for New financing & Repayment</a>
+                            </li>
+                            <li class="nav-dropdown-item"><a href="#">Online Financing "FAQs"</a>
+
+                            </li>
+                            <li class="nav-dropdown-item"><a href="#">Q&A ON TAWARRUQ</a>
+
+                            </li>
+                            <li class="nav-dropdown-item"><a href="#">Other Services</a>
+
+                            </li>
+                            <li class="nav-dropdown-item"><a href="#">With KFH your finance is easier</a>
+
+                            </li>
+                        </ul>
+            </div>
+            </li>
+            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
+
+                            <img src="images/menu-icon/icon-cards.svg" alt="icon" class="icon-normal">
+
+                            <img src="images/menu-icon/icon-cards-green.svg" alt="icon" class="icon-hover">
+
+                        </i> <a href="#">Cards</a> <span class="menu-arrow"></span>
+                <div
+                class="nav-dropdown">
+                    <div class="go__back">
+                        <icon class="icon-back"></icon><a href="#">Cards</a>
+                    </div>
+                    <ul>
+                        <li class="nav-dropdown-item"><a href="#">Credit Cards</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Prepaid Cards</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Card Services</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">KFH Travel Tips</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Distinctive Offers for KFH Banking Cards</a>
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Baitak Rewards</a>
+
+                        </li>
+                    </ul>
+                    </div>
+            </li>
+            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
+
+                            <img src="images/menu-icon/icon-ways-to-bank.svg" alt="icon" class="icon-normal">
+
+                            <img src="images/menu-icon/icon-ways-to-bank-green.svg" alt="icon" class="icon-hover">
+
+                        </i> <a href="#">KFH Ways to Bank</a> <span class="menu-arrow"></span>
+                <div
+                class="nav-dropdown">
+                    <div class="go__back">
+                        <icon class="icon-back"></icon><a href="#">KFH Ways to Bank</a>
+                    </div>
+                    <ul>
+                        <li class="nav-dropdown-item"><a href="#">KFHONLINE for individuals</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Explore our ATM services</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">KFHONLINE Mobile Application</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">“Allo Baitak” call service</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Branches of customers with special needs KFH
+
+                                        Trade</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">E-services user guides for KFHOnline App</a>
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Services user guides for KFH ATMs</a>
+
+                        </li>
+                    </ul>
+                    </div>
+            </li>
+            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
+
+                            <img src="images/menu-icon/icon-tools.svg" alt="icon" class="icon-normal">
+
+                            <img src="images/menu-icon/icon-tools-green.svg" alt="icon" class="icon-hover">
+
+                        </i> <a href="#">Tools
+
+                            & Services</a> <span class="menu-arrow"></span>
+                <div
+                class="nav-dropdown">
+                    <div class="go__back">
+                        <icon class="icon-back"></icon><a href="#">Tools & Services</a>
+                    </div>
+                    <ul>
+                        <li class="nav-dropdown-item"><a href="#">Calculators</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Career</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Currency Rates</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">IBAN number & Swift code</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Safe Deposits Box Service</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">KFH Quran App</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Emergency cash "Service"</a>
+
+                        </li>
+                    </ul>
+                    </div>
+            </li>
+            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
+
+                            <img src="images/menu-icon/icon-investment.svg" alt="icon" class="icon-normal">
+
+                            <img src="images/menu-icon/icon-investment-green.svg" alt="icon" class="icon-hover">
+
+                        </i> <a href="#">Investment</a> <span class="menu-arrow"></span>
+                <div
+                class="nav-dropdown">
+                    <div class="go__back">
+                        <icon class="icon-back"></icon><a href="#">Investment</a>
+                    </div>
+                    <ul>
+                        <li class="nav-dropdown-item"><a href="#">Investment Deposits</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">Long Term Investment Plans</a>
+
+                        </li>
+                    </ul>
+                    </div>
+            </li>
+            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
+
+                            <img src="images/menu-icon/icon-sales.svg" alt="icon" class="icon-normal">
+
+                            <img src="images/menu-icon/icon-sales-green.svg" alt="icon" class="icon-hover">
+
+                        </i> <a href="#">After
+
+                            Sales Services</a> <span class="menu-arrow"></span>
+                <div
+                class="nav-dropdown">
+                    <div class="go__back">
+                        <icon class="icon-back"></icon><a href="#">After Sales Services</a>
+                    </div>
+                    <ul>
+                        <li class="nav-dropdown-item"><a href="#">After Sales Services - Certification</a>
+
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">After Sales Services - Financing Services</a>
+                        </li>
+                        <li class="nav-dropdown-item"><a href="#">After Sales Services - Banking Cards</a>
+
+                        </li>
+                    </ul>
+                    </div>
+            </li>
+            </ul>
+            </nav>
+            <!-- Start: Mobile only content -->
+            <nav class="nav-secondary-sub desktop-hidden">
+                <ul>
+                    <li><a href="#">Contact us</a>
+
+                    </li>
+                    <li><a href="#">Branch & ATM locator</a>
+
+                    </li>
+                </ul>
+            </nav>
+            <!-- Country link list -->
+            <div class="country-change">
+                <ul class="list-unstyled">
+                    <li> <a href="#" class="country-name">
+
+                            <i class="icon-flag"><img src="images/flags/flag-germany.png" alt="Germany"></i>
+
+                            Germany
+
+                        </a>
+                    </li>
+                    <li><a href="#" class="country-name">
+
+                            <i class="icon-flag"><img src="images/flags/flag-turkey.png" alt="Germany"></i>
+
+                            Turkey
+
+                        </a>
+                    </li>
+                    <li><a href="#" class="country-name">
+
+                            <i class="icon-flag"><img src="images/flags/flag-malasia.png" alt="Germany"></i>
+
+                            Malaysia
+
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End: Mobile only content-->
+            <div class="lang-switch"> <a href="#">عربي</a>
+            </div>
+            </div>
+            </div>
+        </header>
+        <!-- Main Content Section -->
+        <main></main>
+        <footer class="site-footer bg-dark">
+            <!-- Footer:Top content -->
+            <div class="site-footer--top">
+                <div class="container">
+                    <div class="footer-cols-row">
+                        <!-- column -->
+                        <div class="footer-col">
+                            <div class="card-footer">
+                                <div class="card-footer-icon">
+                                    <img src="images/icons/icon-map.svg" alt="Map icon">
+                                </div>
+                                <div class="card-footer-content"> <a href="https://www.kfh.com/en/home/Corporate-Banking/Product-Services/Dedicated-Banking-branches-to-serve-you.html
+
+                            " class="link-with-arrow-white">Visit Us</a>
+                                    <div
+                                    class="card-footer-content-inner">
+                                        <p>Locating a Kuwait Finance House branches or ATMs is now faster and simpler
+                                            with our ATM Branch Locator! Just enter a location near you to find nearest
+                                            Branch or ATM.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column -->
+                    <div class="footer-col">
+                        <div class="card-footer">
+                            <div class="card-footer-icon">
+                                <img src="images/icons/icon-support.svg" alt="Map icon">
+                            </div>
+                            <div class="card-footer-content"> <span class="link-with-arrow-white no-arrow">CALL US 24/7 "Batik telephone service"
+
+                                1803333</span>
+                                <div class="card-footer-content-inner">
+                                    <div class="phone-info-list">
+                                        <div class="phone-info">
+                                            <p>USA & Canada</p> <a href="tel:1-800-818-8608">1-800-818-8608</a>
+                                        </div>
+                                        <div class="phone-info">
+                                            <p>France</p> <a href="tel:0805-086620">0805-086620</a>
+                                        </div>
+                                        <div class="phone-info">
+                                            <p>United Kingdom</p> <a href="tel:0-800-014-8898">0-800-014-8898</a>
+                                        </div>
+                                        <div class="phone-info">
+                                            <p>Turkey</p> <a href="tel:00908507712154">00908507712154</a>
+                                        </div>
+                                        <div class="phone-info">
+                                            <p>Germany</p> <a href="tel:0800-181-7080">0800-181-7080</a>
+                                        </div>
+                                        <div class="phone-info">
+                                            <p>Spain</p> <a href="tel:0800-181-7080">900-905-440</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column -->
+                    <div class="footer-col">
+                        <div class="card-footer">
+                            <div class="card-footer-icon">
+                                <img src="images/icons/icon-write-to-us.svg" alt="Map icon">
+                            </div>
+                            <div class="card-footer-content"> <a href="https://www.kfh.com/en/home/Personal/Ways-to-bank/contact.html
+
+                            " class="link-with-arrow-white">Write to Us</a>
+                                <div
+                                class="card-footer-content-inner">
+                                    <p>You can contact us by clicking the ‘contact us’ button. We will get back
+                                        to you as soon as possible, whether you need to report a problem, have
+                                        inquiry or suggestion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <!-- Footer: Main content -->
+            <div class="site-footer--main">
+                <div class="container">
+                    <!--left: Company detail - -->
+                    <div class="footer-company-info"> <a href="#" class="footer-logo">
+
+                    <img src="images/site-logo-white.svg" alt="KFH logo">
+
+                </a>
+                        <p>Kuwait Finance House (KFH) is considered a pioneer in the banking phenomenon
+                            known as Islamic Finance or Shari’a Compliant Banking. KFH is the first
+                            Islamic bank established in 1977 in the State of Kuwait and today it’s
+                            one of the foremost Islamic financial institutions in the world.</p>
+                        <div
+                        class="footer-company-info--download">
+                             <h4>Download our App</h4>
+                            <ul class="list-unstyled">
+                                <li><a href="`#"><img src="images/Google play.svg" alt="Get it on Google play"></a>
+                                </li>
+                                <li><a href="`#"><img src="images/App store.svg" alt="Download on the App Store"></a>
+                                </li>
+                                <li><a href="`#"><img src="images/huawei-appgallery.svg" alt="Explore it on AppGallery"></a>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                <!-- Right:footer links -->
+                <div class="footer-nav-links">
+                    <div class="footer-nav-links-wrap">
+                        <div class="footer-nav-col">
+                            <ul class="list-unstyled">
+                                <li><a href="#">About Kuwait Finance House</a>
+
+                                </li>
+                                <li><a href="">Board of Directors & Management</a>
+
+                                </li>
+                                <li><a href="">Kuwait Finance House Disclosures</a>
+
+                                </li>
+                                <li><a href="">Banking Awareness</a>
+
+                                </li>
+                                <li><a href="">Tariff List</a>
+
+                                </li>
+                                <li><a href="">KFH Reports</a>
+
+                                </li>
+                                <li><a href="">Financial Institutions</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-col">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Financial Reports</a>
+
+                                </li>
+                                <li><a href="">Local Real Estate Reports</a>
+
+                                </li>
+                                <li><a href="">Corporate Profile</a>
+
+                                </li>
+                                <li><a href="">Customer complaints</a>
+
+                                </li>
+                                <li><a href="">Information Security Guide</a>
+
+                                </li>
+                                <li><a href="">Careers</a>
+
+                                </li>
+                                <li><a href="">IBAN Number & Swift Code</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-nav-col">
+                            <ul class="list-unstyled">
+                                <li><a href="#">FAQs</a>
+
+                                </li>
+                                <li><a href="">Q&A On Tawarruq</a>
+
+                                </li>
+                                <li><a href="">Kuwait Banking Report</a>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mobile only download buttons -->
+                <div class="footer-company-info--download mobile-only">
+                     <h4>Download our App</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="`#"><img src="images/App store.svg" alt="Download on the App Store"></a>
+                        </li>
+                        <li><a href="`#"><img src="images/Google play.svg" alt="Get it on Google play"></a>
+                        </li>
+                        <li><a href="`#"><img src="images/huawei-appgallery.svg" alt="Explore it on AppGallery"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!-- Footer:bottom content-->
+            <div class="site-footer--bottom">
+                <div class="container">
+                    <div class="social-connects">
+                        <ul class="list-unstyled">
+                            <li> <a href="#">
+
+                            <i class="icon icon-facebook">
+
+                                <img src="images/icons/icon-facebook.png" alt="facebook">
+
+                            </i>
+
+                            Facebook
+
+                        </a>
+                            </li>
+                            <li> <a href="#">
+
+                            <i class="icon icon-x">
+
+                                <img src="images/icons/icon-x.png" alt="X">
+
+                            </i>
+
+                            X
+
+                        </a>
+                            </li>
+                            <li> <a href="#">
+
+                            <i class="icon icon-instagram">
+
+                                <img src="images/icons/icon-instagram.png" alt="Instagram">
+
+                            </i>
+
+                            Instagram
+
+                        </a>
+                            </li>
+                            <li> <a href="#">
+
+                            <i class="icon icon-linkedin">
+
+                                <img src="images/icons/icon-linkedin.png" alt="Linkedin">
+
+                            </i>
+
+                            Linkedin
+
+                        </a>
+                            </li>
+                            <li> <a href="#">
+
+                            <i class="icon icon-snapchat">
+
+                                <img src="images/icons/icon-snapchat.png" alt="Snapchat">
+
+                            </i>
+
+                            Snapchat
+
+                        </a>
+                            </li>
+                            <li> <a href="#">
+
+                            <i class="icon icon-youtube">
+
+                                <img src="images/icons/icon-youtube.png" alt="Youtube">
+
+                            </i>
+
+                            Youtube
+
+                        </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-copy-right">COPYRIGHT © 2024 KUWAIT FINANCE HOUSE. ALL RIGHTS RESERVED</p>
+                    <div class="footer-quick-links">
+                        <div class="footer-quick-links-inner"> <a href="#">Terms & Condition</a>  <a href="#">Cookies</a><a href="#">Privacy Policy</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/vendors/core.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>

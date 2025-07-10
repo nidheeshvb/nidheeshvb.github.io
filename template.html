@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"
+        />
+        <!-- Meta:site specific-->
+        <title>KFH-Landing pages</title>
+        <meta name="author" content="NVB" />
+        <meta name="description" content="Description of your content here" />
+        <meta name="format-detection" content="telephone=no">
+        <!-- Open Graph Data for Facebook -->
+        <meta property="og:title" content="Title Of Your Content Here" />
+        <meta property="og:description" content="Description of your content here"
+        />
+        <meta property="og:url" content="http://www.yoursite.com/yourcontent.html"
+        />
+        <meta property="og:image" content="http://www.yoursite.com/yourimage.jpg"
+        />
+        <meta property="og:site_name" content="The Name Of Your Site" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+        <!-- Twitter cards for twitter.com -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Title Of Your Content Here" />
+        <meta name="twitter:description" content="Description of your content here"
+        />
+        <meta name="twitter:site" content="@yourusername" />
+        <meta name="twitter:image" content="http://www.yoursite.com/yourimage.jpg"
+        />
+        <meta name="twitter:creator" content="@yourusername" />
+        <!-- favicon and device icons -->
+        <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png"
+        sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="images/favicon/site.webmanifest" />
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Kufi+Arabic:wght@100..900&display=swap"
+        rel="stylesheet">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/vendor.css" />
+    </head>
+    
+    <body class="krp">
+        <main>
+            <div class="container">
+                <br>
+                 <h3>Tab</h3>
+                <div class="tabs">
+                    <ul class="tab-list" role="tablist" aria-labelledby="tablist-title">
+                        <li role="presentation">
+                            <button id="tab1" class="tab" role="tab" aria-selected="true" aria-controls="panel1">Tab 1</button>
+                        </li>
+                        <li role="presentation">
+                            <button id="tab2" class="tab" role="tab" aria-selected="false" aria-controls="panel2"
+                            tabindex="-1">Tab 2</button>
+                        </li>
+                        <li role="presentation">
+                            <button id="tab3" class="tab" role="tab" aria-selected="false" aria-controls="panel3"
+                            tabindex="-1">Tab 3</button>
+                        </li>
+                    </ul>
+                    <div id="panel1" class="tab-panel" role="tabpanel" aria-labelledby="tab1"
+                    tabindex="0" aria-hidden="false">
+                         <h3>Content for Tab 1</h3>
+                        <p>This is the content for the first tab.</p>
+                    </div>
+                    <div id="panel2" class="tab-panel" role="tabpanel" aria-labelledby="tab2"
+                    tabindex="0" aria-hidden="true">
+                         <h3>Content for Tab 2</h3>
+                        <p>This is the content for the second tab.</p>
+                    </div>
+                    <div id="panel3" class="tab-panel" role="tabpanel" aria-labelledby="tab3"
+                    tabindex="0" aria-hidden="true">
+                         <h3>Content for Tab 3</h3>
+                        <p>This is the content for the third tab.</p>
+                    </div>
+                </div>
+                 <h3>Accordion</h3>
+                <div class="accordion">
+                    <div class="accordion__item">
+                        <div class="accordion__head-wrap">
+                            <button class="accordion__head" aria-controls="section1" aria-expanded="false">Toggle Section 1</button>
+                        </div>
+                        <div id="section1" class="accordion__body" tabindex="0">
+                            <div class="accordion-content">Toggle Section 1</div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head-wrap">
+                            <button class="accordion__head" aria-controls="section2" aria-expanded="false">Toggle Section 2</button>
+                        </div>
+                        <div id="section2" class="accordion__body" tabindex="0">
+                            <div class="accordion-content">Toggle Section 2</div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head-wrap">
+                            <button class="accordion__head" aria-controls="section3" aria-expanded="false">Toggle Section 2</button>
+                        </div>
+                        <div id="section3" class="accordion__body" tabindex="0">
+                            <div class="accordion-content">Toggle Section 3</div>
+                        </div>
+                    </div>
+                    <div class="accordion__item">
+                        <div class="accordion__head-wrap">
+                            <button class="accordion__head" aria-controls="section4" aria-expanded="false">Toggle Section 4</button>
+                        </div>
+                        <div id="section4" class="accordion__body" tabindex="0">
+                            <div class="accordion-content">Toggle Section 4</div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                 <h3>Form elements</h3>
+                <div class="form-elements">
+                    <!-- use area label if form label is not used -->
+                    <form>
+                        <!-- Text box Input -->
+                        <div class="form__block">
+                            <label for="textbox">Label</label>
+                            <input type="text" id="textbox" name="textbox" placeholder="Textbox"
+                            aria-required="true" aria-label="Textbox" />
+                        </div>
+                        <!-- Email Input -->
+                        <div class="form__block">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Email"
+                            aria-required="true" aria-label="Email" />
+                        </div>
+                        <!-- Password Input -->
+                        <div class="form__block">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Password"
+                            aria-required="true" aria-label="Password" />
+                        </div>
+                        <!-- Search Input -->
+                        <div class="form__block">
+                            <label for="search">Search</label>
+                            <input type="search" id="search" name="search" placeholder="search"
+                            aria-required="true" aria-label="search" />
+                        </div>
+                        <!-- Search Input -->
+                        <div class="form__block">
+                            <label for="search">Default Select</label>
+                            <select id="favorite-fruit" name="favorite-fruit"
+                            aria-label="Favorite Fruit">
+                                <option value="" disabled selected>Select a fruit</option>
+                                <option value="apple">Apple</option>
+                                <option value="banana">Banana</option>
+                                <option value="cherry">Cherry</option>
+                                <option value="date">Date</option>
+                                <option value="grape">Grape</option>
+                            </select>
+                        </div>
+                        <!-- custom select -->
+                        <div class="form__block">
+                            <label>Custom Multi select and single Select</label>
+                            <div class="custom-select"
+                            data-multiple="true">
+                                <label for="custom-select-input" class="sr-only">Select options</label>
+                                <div class="select-box" role="combobox" aria-haspopup="listbox"
+                                aria-expanded="false" aria-controls="dropdown-list">
+                                    <div id="custom-select-input" class="select-input" tabindex="0" aria-autocomplete="list">Select</div>
+                                    <div class="selected-tags" aria-live="polite"></div>
+                                    <!-- <span class="dropdown-arrow" aria-hidden="true">&#x25BC;</span> -->
+                                </div>
+                                <div class="dropdown">
+                                    <input type="text" placeholder="Search..." class="dropdown-search" aria-controls="dropdown-list"
+                                    />
+                                    <ul id="dropdown-list" class="dropdown-options" role="listbox" tabindex="-1">
+                                        <li role="option" data-value="option1" tabindex="-1">Option 1</li>
+                                        <li role="option" data-value="option2" tabindex="-1">Option 2</li>
+                                        <li role="option" data-value="option3" tabindex="-1">Option 3</li>
+                                        <li role="option" data-value="option4" tabindex="-1">Option 4</li>
+                                        <li role="option" data-value="option5" tabindex="-1">Option 5</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Text Area -->
+                        <div class="form__block">
+                            <label for="textarea">Text area</label>
+                            <textarea placeholder="Text area"></textarea>
+                        </div>
+                        <!-- Check box -->
+                        <div class="form__block">
+                            <input type="checkbox" id="html" />
+                            <label for="html" tabindex="0">HTML</label>
+                        </div>
+                        <!-- radio box -->
+                        <div class="form__block">
+                            <input type="radio" id="test2" name="radio-group" />
+                            <label for="test2" tabindex="0">Peach</label>
+                        </div>
+                    </form>
+                </div>
+                <br />
+                 <h3>Sliders</h3>
+                <br />
+                <br />
+                <br />
+                <br />
+                 <h3>Lazy Load BG</h3>
+                <br />
+                <br />
+                 <h3>Lazy Load SRC</h3>
+                <img class="lazy" data-src=".images/banner/bg-demo.jpg" alt="image" width="500px"
+                height="300px" />
+                <br />
+                <br />
+                 <h3>Typography</h3>
+                 <h1>Heading H1</h1>
+                 <h2>Heading H2</h2>
+                 <h3>Heading H3</h3>
+                 <h4>Heading H4</h4>
+                 <h5>Heading H5</h5>
+                 <h6>Heading H6</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <ul>
+                    <li>Un order list List1</li>
+                    <li>Un order list List2</li>
+                    <li>Un order list List3</li>
+                    <li>Un order list List4</li>
+                    <li>Un order list List5</li>
+                </ul>
+                <ol>
+                    <li>Order list List1</li>
+                    <li>Order list List2</li>
+                    <li>Order list List3</li>
+                    <li>Order list List4</li>
+                    <li>Order list List5</li>
+                </ol> <a href="" title="link name">Anchor Link</a>
+                </br>
+                <button class="btn-basic">Basic Button</button> <a href="#" class="btn-basic hover-fade">Basic Button</a>
+            </div>
+        </main>
+        <script src="./js/vendors/core.js"></script>
+        <script src="./js/header.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
