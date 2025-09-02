@@ -2,14 +2,14 @@
 <html lang="en">
     
     <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"
-        />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Meta:site specific-->
-        <title>KFH-Landing pages</title>
+        <title>Homepage</title>
         <meta name="author" content="NVB" />
-        <meta name="description" content="Description of your content here" />
         <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="IBSA description">
         <!-- Open Graph Data for Facebook -->
         <meta property="og:title" content="Title Of Your Content Here" />
         <meta property="og:description" content="Description of your content here"
@@ -35,1615 +35,787 @@
         sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg"
         />
-        <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+        <link rel="shortcut icon" href="/images/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png"
         />
-        <link rel="manifest" href="images/favicon/site.webmanifest" />
-        <!-- Font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Noto+Kufi+Arabic:wght@100..900&display=swap"
-        rel="stylesheet">
+        <!-- <link rel="manifest" href="images/favicon/site.webmanifest" />-->
+        <!-- FontAwesome Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="./css/main.css" />
-        <link rel="stylesheet" href="./css/vendor.css" />
+        <link rel="stylesheet" href="./css/vendors.css" />
+        <link rel="stylesheet" href="./css/styles.css" />
     </head>
     
-    <body class="krp">
-        <!-- Component: Header -->
-        <header class="site-header">
-            <!-- Header: top -->
-            <div class="site-header-top">
+    <body>
+        <div class="content-wrapper">
+            <div class="header-topbar">
                 <div class="container">
-                    <!-- Left-side content -->
-                    <div class="site-header-top--left"> <a href="#" class="logo">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- text slider -->
+                            <div class="swiper text-slider">
+                                <div class="swiper-wrapper">
+                                    <!-- Slide 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="text-slide-inner text-center">
+                                             <h3>
 
-                    <img src="images/site-logo.svg" alt="Kuwait Finance House-logo" class="logo-desktop">
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
 
-                    <img src="images/logo-mobile.svg" alt="Kuwait Finance House-logo" class="logo-mobile">
+                                    INTERRUZIONE SERVIZIO
+
+                                </h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolor varius
+                                                enim in eros <i class="fa-solid fa-arrow-right"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="swiper-slide">
+                                        <div class="text-slide-inner text-center">
+                                             <h3>
+
+                                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                                    INTERRUZIONE SERVIZIO
+
+                                </h3>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, dolor varius
+                                                enim in eros <i class="fa-solid fa-arrow-right"></i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main header -->
+            <header class="site-header">
+                <div class="header__container container">
+                    <div class="header__row row align-items-center">
+                        <!--Header leftside content -->
+                        <div class="header__logo-wrapper col-4"> <a href="#" class="header__logo">
+
+                    <img src="images/AIM-logo.png" alt="AIM logo" class="header__logo-image">
 
                 </a>
-                        <nav class="nav-secondary">
-                            <ul>
-                                <li><a href="#" class="active"><span>Personal Banking<span></a>
-
-                                </li>
-                                <li><a href="#"><span>Private Banking</span></a>
-
-                                </li>
-                                <li><a href="#"><span>Corporate Banking</span></a>
-
-                                </li>
-                                <li><a href="#"><span>KFH Auto</span></a>
-
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <!-- right-side content -->
-                    <div class="site-header-top--right">
-                        <!-- Moble hamburger icon -->
-                        <div class="hamburger" id="hamburger"> <span class="line"></span> <span class="line"></span> <span class="line"></span>
                         </div>
-                        <!-- Mobile dropdown close icon:new -->
-                        <div class="dropdown-close" id="drop-close"> <span class="line"></span> <span class="line"></span> <span class="line"></span>
-                        </div>
-                        <!-- secondary navigation sub -->
-                        <nav class="nav-secondary-sub">
-                            <ul>
-                                <li><a href="#">Contact us</a>
-
-                                </li>
-                                <li><a href="#">Branch & ATM locator</a>
-
-                                </li>
-                            </ul>
-                        </nav>
-                        <!-- Language switcher -->
-                        <div class="language-switcher"> <a href="#" class="lang-switch"><span>ع</span></a>
-                        </div>
-                        <!-- Search -->
-                        <div class="search-box">
-                            <button id="search-button" class="search-toggle"> <span class="icon-search"><img src="images/icon-search.svg" alt="Search icon"></span>
-                            </button>
-                            <div id="search-container" class="search-container">
-                                <div class="language-switcher"> <a href="#" class="lang-switch"><span>ع</span></a>
-                                </div>
-                                <div class="search-box--inner">
-                                    <input type="text" placeholder="Search" class="search-input" />
-                                    <button id="close-button" class="close-btn">Cancel</button>
-                                </div>
+                        <!-- Header rightside (Mobile only) -->
+                        <div class="col-8 header-content-mobile">
+                            <!-- button --> <a href="#" class="special-link">My AIM</a>
+                            <!-- Moble hamburger icon -->
+                            <div class="hamburger" id="hamburger"> <span class="line"></span> <span class="line"></span> <span class="line"></span>
                             </div>
                         </div>
-                        <!-- Country switcher -->
-                        <div class="country-switcher">
-                            <div class="dropdown-container">
-                                <div class="dropdown-header" data-dropdown="dropdown1"> <i class="icon-globe"><img src="images/icon-globe.svg" alt="Globe icon"></i>
-                                </div>
-                                <div class="dropdown-content" id="dropdown1">
-                                    <ul class="list-unstyled">
-                                        <li> <a href="#" class="country-name">
-
-                                        <i class="icon-flag"><img src="images/flags/flag-germany.png" alt="Germany"></i>
-
-                                        KFH Germany
-
-                                    </a>
+                        <!-- Header rightside contents -->
+                        <div class="header__content col-8">
+                            <!-- secondary navigation -->
+                            <div class="header__nav-secondary">
+                                <nav class="nav-secondary">
+                                    <ul class="nav-secondary__list">
+                                        <li class="nav-secondary__item"> <a href="#">Chi Siamo</a>
                                         </li>
-                                        <li><a href="#" class="country-name">
-
-                                        <i class="icon-flag"><img src="images/flags/flag-turkey.png" alt="Germany"></i>
-
-                                        KFH Turkey
-
-                                    </a>
+                                        <li class="nav-secondary__item"> <a href="#">News e approfondimenti</a>
                                         </li>
-                                        <li><a href="#" class="country-name"> <i class="icon-flag"><img
-
-                                                src="images/flags/flag-malasia.png" alt="Germany"></i>
-
-                                        KFH Malaysia
-
-                                    </a>
+                                        <li class="nav-secondary__item"> <a href="#" class="special-link">My AIM</a>
                                         </li>
                                     </ul>
-                                </div>
+                                </nav>
                             </div>
-                        </div>
-                        <!-- Customer login - Dropdown -->
-                        <div class="dropdown-customer">
-                            <div class="dropdown-container">
-                                <div class="dropdown-header" data-dropdown="dropdown2">
-                                    <div class="btn-dropdown">
-                                        <div class="mobile-view-only">
-                                            <img src="images/icons/icon-avatar.svg" alt="icon-avatar">
-                                        </div>
-                                        <div class="desktop-view-only"> <span>Customer login</span>  <i class="icon-chevron-bottom"><img
+                            <!-- Primary Navigation -->
+                            <div class="header__nav-primary">
+                                <nav class="nav-primary">
+                                    <ul class="nav-primary__list">
+                                        <li class="nav-primary__item with-mega-menu"> <a href="#">Elettricità</a> <span class="menu-arrow"></span>
+                                            <!-- mega menu
+                                            -->
+                                            <div class="nav-mega-menu">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 header-col header-col--intro">
+                                                             <h2>Elettricità</h2>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                                                enim in eros elementum tristique.</p> <a href="#" class="text-link-arrow">Scopri di più</a>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-1">
+                                                             <h3>La mia rete</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Tariffe</a>
 
-                                            src="images/icon-chervron-green.svg" alt="icon arrow down"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dropdown-content" id="dropdown2">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#" class="link-with-arrow">KFH Online Retail Banking Services</a>
+                                                                </li>
+                                                                <li><a href="#">Nuove utenze e traslochi</a>
 
+                                                                </li>
+                                                                <li><a href="#">Lettura contatore</a>
+
+                                                                </li>
+                                                                <li><a href="#">Ecoprodotti</a>
+
+                                                                </li>
+                                                                <li><a href="#">Etichettatura</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-2">
+                                                             <h3>INFO E SERVIZI</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Comunità per il consumo proprio</a>
+
+                                                                </li>
+                                                                <li><a href="#">Consulenza energetica</a>
+
+                                                                </li>
+                                                                <li><a href="#">Contatori intelligenti (Smart meter)</a>
+
+                                                                </li>
+                                                                <li><a href="#">Reti di fibre ottiche per aziende</a>
+
+                                                                </li>
+                                                                <li><a href="#">Messa a terra</a>
+
+                                                                </li>
+                                                                <li><a href="#">Piano di illuminazione pubblica</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--card">
+                                                            <div class="card-image">
+                                                                <div class="card-image-img">
+                                                                    <img src="images/card-img-02.jpg" alt="Placeholder image">
+                                                                </div>
+                                                                <div class="card-image-content">
+                                                                     <h3>Comunità per il consumo proprio</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p> <a href="#" class="text-link">Leggi</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li><a href="#" class="link-with-arrow">KFH Online Corporate Banking Services</a>
+                                        <li class="nav-primary__item with-mega-menu"> <a href="#">Acqua</a> <span class="menu-arrow"></span>
+                                            <!-- mega menu -->
+                                            <div class="nav-mega-menu">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 header-col header-col--intro">
+                                                             <h2>Acqua</h2>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                                                enim in eros elementum tristique.</p> <a href="#" class="text-link-arrow">Scopri di più</a>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-1">
+                                                             <h3>La mia rete</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Tariffe</a>
 
+                                                                </li>
+                                                                <li><a href="#">Nuove utenze e traslochi</a>
+
+                                                                </li>
+                                                                <li><a href="#">Lettura contatore</a>
+
+                                                                </li>
+                                                                <li><a href="#">Ecoprodotti</a>
+
+                                                                </li>
+                                                                <li><a href="#">Etichettatura</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-2">
+                                                             <h3>INFO E SERVIZI</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Comunità per il consumo proprio</a>
+
+                                                                </li>
+                                                                <li><a href="#">Consulenza energetica</a>
+
+                                                                </li>
+                                                                <li><a href="#">Contatori intelligenti (Smart meter)</a>
+
+                                                                </li>
+                                                                <li><a href="#">Reti di fibre ottiche per aziende</a>
+
+                                                                </li>
+                                                                <li><a href="#">Messa a terra</a>
+
+                                                                </li>
+                                                                <li><a href="#">Piano di illuminazione pubblica</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--card">
+                                                            <div class="card-image">
+                                                                <div class="card-image-img">
+                                                                    <img src="images/card-img-02.jpg" alt="Placeholder image">
+                                                                </div>
+                                                                <div class="card-image-content">
+                                                                     <h3>Comunità per il consumo proprio</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p> <a href="#" class="text-link">Leggi</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li><a href="#" class="link-with-arrow">KFH Online Trade Service</a>
-
+                                        <li class="nav-primary__item"> <a href="#">Gas</a>
                                         </li>
-                                        <li><a href="#" class="link-with-arrow">Skiplino – Book your branch appointment</a>
-
+                                        <li class="nav-primary__item highlighted-link"> <a href="#">Assistenza e documenti</a>
                                         </li>
                                     </ul>
-                                </div>
+                                </nav>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Header:bottom -->
-            <div class="menu-main--content">
-                <div class="container">
-                    <!-- Start: Mobile only content -->
-                    <nav class="nav-secondary desktop-hidden">
-                        <ul class="horizontal-list">
-                            <li class="link-active"><a href="#">Personal Banking</a>
-
-                            </li>
-                            <li><a href="#">Private Banking</a>
-
-                            </li>
-                            <li><a href="#">Corporate Banking</a>
-
-                            </li>
-                            <li><a href="#">KFH Auto</a>
-
-                            </li>
-                        </ul>
-                    </nav>
-                    <!-- End: Mobile only content-->
-                    <nav class="primary-nav">
-                        <div class="mobile-only-heading"> <a href="#">Explore Personal banking</a>
-                        </div>
-                        <ul class="list-unstyled">
-                            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
-
-                            <img src="images/menu-icon/icon-accounts.svg" alt="icon" class="icon-normal">
-
-                            <img src="images/menu-icon/icon-accounts-green.svg" alt="icon" class="icon-hover">
-
-                        </i> <a href="https://www.kfh.com/en/home/Personal/Accounts/Banking-Accounts.html"
-                                target="_blank" rel="noopener noreferrer">Accounts</a> <span class="menu-arrow"></span>
-                                <div
-                                class="nav-dropdown">
-                                    <div class="go__back">
-                                        <icon class="icon-back"></icon><a href="#">Accounts</a>
+            </header>
+            <main class="main-content">
+                <section class="hero-banner">
+                    <div class="swiper hero-slider">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="hero-slider-inner">
+                                    <div class="hero-slide-image">
+                                        <picture class="lp-hero-banner-bg__image">
+                                            <source media="(max-width: 768px)" srcset="images/banner-img-01-mob.png">
+                                                <source media="(min-width: 769px)" srcset="images/banner-img-01.png">
+                                                    <img src="images/banner-img-01.png" alt="Banner image">
+                                        </picture>
                                     </div>
-                                    <ul>
-                                        <li class="nav-dropdown-item"><a href="#">"Current" Account</a>
-
-                                        </li>
-                                        <li class="nav-dropdown-item"><a href="#">"Electron" Account</a>
-
-                                        </li>
-                                        <li class="nav-dropdown-item"><a href="#"> "Saving" Account</a>
-
-                                        </li>
-                                        <li class="nav-dropdown-item"><a href="#"> "Alrabeh" Account</a>
-
-                                        </li>
-                                        <li class="nav-dropdown-item"><a href="#">"Al-Hassad" Account</a>
-
-                                        </li>
-                                        <li class="nav-dropdown-item"><a href="#"> "Baiti" Account</a>
-
-                                        </li>
-                                        <li class="nav-dropdown-item"><a href="#">"Gold" Account</a>
-
-                                        </li>
-                                        <li class="nav-dropdown-item"><a href="#"> "AL-AMIL" Account</a>
-
-                                        </li>
-                                        <li class="nav-dropdown-item"><a href="#">Profits Announcement</a>
-
-                                        </li>
-                                    </ul>
-                </div>
-                </li>
-                <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
-
-                            <img src="images/menu-icon/icon-tiers.svg" alt="icon" class="icon-normal">
-
-                            <img src="images/menu-icon/icon-tiers-green.svg" alt="icon" class="icon-hover">
-
-                        </i> <a href="#">Banking Tiers</a> <span class="menu-arrow"></span>
-                    <div
-                    class="nav-dropdown">
-                        <div class="go__back">
-                            <icon class="icon-back"></icon><a href="#">Banking Tiers</a>
+                                    <div class="hero-slider-content">
+                                        <div class="container">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-md-11 col-lg-10 d-flex align-items-center justify-content-between">
+                                                    <div class="hero-slider-content-inner">
+                                                         <h1>AIM, l’energia della tua città.</h1>
+                                                        <p>Elettricità, acqua, calore e connessioni: servizi essenziali per un territorio
+                                                            che guarda al futuro.</p>
+                                                    </div> <a href="#" class="btn btn-secondary">Scopri AIM</a>
+                                                </div>
+                                            </div>
+                                            <!-- Controls -->
+                                            <div class="swiper-controls">
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="hero-slider-inner">
+                                    <div class="hero-slide-image">
+                                        <picture class="lp-hero-banner-bg__image">
+                                            <source media="(max-width: 768px)" srcset="images/banner-img-01-mob.png">
+                                                <source media="(min-width: 769px)" srcset="images/banner-img-01.png">
+                                                    <img src="images/banner-img-01.png" alt="Banner image">
+                                        </picture>
+                                    </div>
+                                    <div class="hero-slider-content">
+                                        <div class="container">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-md-11 col-lg-10 d-flex align-items-center justify-content-between">
+                                                    <div class="hero-slider-content-inner">
+                                                         <h1>AIM, l’energia della tua città.</h1>
+                                                        <p>Elettricità, acqua, calore e connessioni: servizi essenziali per un territorio
+                                                            che guarda al futuro.</p>
+                                                    </div> <a href="#" class="btn btn-secondary">Scopri AIM</a>
+                                                </div>
+                                            </div>
+                                            <!-- Controls -->
+                                            <div class="swiper-controls">
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="hero-slider-inner">
+                                    <div class="hero-slide-image">
+                                        <picture class="lp-hero-banner-bg__image">
+                                            <source media="(max-width: 768px)" srcset="images/banner-img-01-mob.png">
+                                                <source media="(min-width: 769px)" srcset="images/banner-img-01.png">
+                                                    <img src="images/banner-img-01.png" alt="Banner image">
+                                        </picture>
+                                    </div>
+                                    <div class="hero-slider-content">
+                                        <div class="container">
+                                            <div class="row d-flex justify-content-center">
+                                                <div class="col-md-11 col-lg-10 d-flex align-items-center justify-content-between">
+                                                    <div class="hero-slider-content-inner">
+                                                         <h1>AIM, l’energia della tua città.</h1>
+                                                        <p>Elettricità, acqua, calore e connessioni: servizi essenziali per un territorio
+                                                            che guarda al futuro.</p>
+                                                    </div> <a href="#" class="btn btn-secondary">Scopri AIM</a>
+                                                </div>
+                                            </div>
+                                            <!-- Controls -->
+                                            <div class="swiper-controls">
+                                                <div class="swiper-button-prev"></div>
+                                                <div class="swiper-button-next"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <ul>
-                            <li class="nav-dropdown-item"><a href="#">"Al Ruwad" Program</a>
-
-                            </li>
-                            <li class="nav-dropdown-item"><a href="#">"Al Tamayoz" Program</a>
-
-                            </li>
-                            <li class="nav-dropdown-item"><a href="#">"Al Rubban" Program for Men</a>
-
-                            </li>
-                            <li class="nav-dropdown-item"><a href="#">"Al Sundus" Program for Women</a>
-
-                            </li>
-                            <li class="nav-dropdown-item"><a href="#">"Hesabi" For Youth</a>
-
-                            </li>
-                            <li class="nav-dropdown-item"><a href="#">"Baiti" Program for Kids</a>
-
-                            </li>
-                            <li class="nav-dropdown-item"><a href="#">Banking Segments Offers & Promotions</a>
-
-                            </li>
-                        </ul>
-            </div>
-            </li>
-            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
-
-                            <img src="images/menu-icon/icon-finance.svg" alt="icon" class="icon-normal">
-
-                            <img src="images/menu-icon/icon-finance-green.svg" alt="icon" class="icon-hover">
-
-                        </i> <a href="#">Financing</a> <span class="menu-arrow"></span>
-                <div
-                class="nav-dropdown">
-                    <div class="go__back">
-                        <icon class="icon-back"></icon><a href="#">Financing</a>
+                        <!-- Pagination outside (common for all slides) -->
+                        <div class="slider-pagination">
+                            <div class="container">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-11 col-lg-10 d-flex align-items-center">
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <ul>
-                        <li class="nav-dropdown-item"><a href="#">Installment Finance</a>
+                </section>
+                <section class="link-list bg-light-grey">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-3">
+                                 <h2>Cosa vuoi fare?</h2>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="row">
+                                    <div class="col-6 col-md-3"> <a href="#" class="link-list-item">
 
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Consumer Finance</a>
+                            <div class="link-icon">
 
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Rescheduling for New financing & Repayment</a>
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Online Financing "FAQs"</a>
+                                <i class="fa-solid fa-suitcase"></i>
 
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Q&A ON TAWARRUQ</a>
+                            </div>
 
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Other Services</a>
+                            <p>Notifica un trasloco</p>
 
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">With KFH your finance is easier</a>
-
-                        </li>
-                    </ul>
-                    </div>
-            </li>
-            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
-
-                            <img src="images/menu-icon/icon-cards.svg" alt="icon" class="icon-normal">
-
-                            <img src="images/menu-icon/icon-cards-green.svg" alt="icon" class="icon-hover">
-
-                        </i> <a href="#">Cards</a> <span class="menu-arrow"></span>
-                <div
-                class="nav-dropdown">
-                    <div class="go__back">
-                        <icon class="icon-back"></icon><a href="#">Cards</a>
-                    </div>
-                    <ul>
-                        <li class="nav-dropdown-item"><a href="#">Credit Cards</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Prepaid Cards</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Card Services</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">KFH Travel Tips</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Distinctive Offers for KFH Banking Cards</a>
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Baitak Rewards</a>
-
-                        </li>
-                    </ul>
-                    </div>
-            </li>
-            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
-
-                            <img src="images/menu-icon/icon-ways-to-bank.svg" alt="icon" class="icon-normal">
-
-                            <img src="images/menu-icon/icon-ways-to-bank-green.svg" alt="icon" class="icon-hover">
-
-                        </i> <a href="#">KFH Ways to Bank</a> <span class="menu-arrow"></span>
-                <div
-                class="nav-dropdown">
-                    <div class="go__back">
-                        <icon class="icon-back"></icon><a href="#">KFH Ways to Bank</a>
-                    </div>
-                    <ul>
-                        <li class="nav-dropdown-item"><a href="#">KFHONLINE for individuals</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Explore our ATM services</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">KFHONLINE Mobile Application</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">“Allo Baitak” call service</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Branches of customers with special needs KFH
-
-                                        Trade</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">E-services user guides for KFHOnline App</a>
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Services user guides for KFH ATMs</a>
-
-                        </li>
-                    </ul>
-                    </div>
-            </li>
-            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
-
-                            <img src="images/menu-icon/icon-tools.svg" alt="icon" class="icon-normal">
-
-                            <img src="images/menu-icon/icon-tools-green.svg" alt="icon" class="icon-hover">
-
-                        </i> <a href="#">Tools
-
-                            & Services</a> <span class="menu-arrow"></span>
-                <div
-                class="nav-dropdown">
-                    <div class="go__back">
-                        <icon class="icon-back"></icon><a href="#">Tools & Services</a>
-                    </div>
-                    <ul>
-                        <li class="nav-dropdown-item"><a href="#">Calculators</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Career</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Currency Rates</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">IBAN number & Swift code</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Safe Deposits Box Service</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">KFH Quran App</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Emergency cash "Service"</a>
-
-                        </li>
-                    </ul>
-                    </div>
-            </li>
-            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
-
-                            <img src="images/menu-icon/icon-investment.svg" alt="icon" class="icon-normal">
-
-                            <img src="images/menu-icon/icon-investment-green.svg" alt="icon" class="icon-hover">
-
-                        </i> <a href="#">Investment</a> <span class="menu-arrow"></span>
-                <div
-                class="nav-dropdown">
-                    <div class="go__back">
-                        <icon class="icon-back"></icon><a href="#">Investment</a>
-                    </div>
-                    <ul>
-                        <li class="nav-dropdown-item"><a href="#">Investment Deposits</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">Long Term Investment Plans</a>
-
-                        </li>
-                    </ul>
-                    </div>
-            </li>
-            <li class="primary-nav-item primary-nav-item--dropdown"> <i class="menu-icon">
-
-                            <img src="images/menu-icon/icon-sales.svg" alt="icon" class="icon-normal">
-
-                            <img src="images/menu-icon/icon-sales-green.svg" alt="icon" class="icon-hover">
-
-                        </i> <a href="#">After
-
-                            Sales Services</a> <span class="menu-arrow"></span>
-                <div
-                class="nav-dropdown">
-                    <div class="go__back">
-                        <icon class="icon-back"></icon><a href="#">After Sales Services</a>
-                    </div>
-                    <ul>
-                        <li class="nav-dropdown-item"><a href="#">After Sales Services - Certification</a>
-
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">After Sales Services - Financing Services</a>
-                        </li>
-                        <li class="nav-dropdown-item"><a href="#">After Sales Services - Banking Cards</a>
-
-                        </li>
-                    </ul>
-                    </div>
-            </li>
-            </ul>
-            </nav>
-            <!-- Start: Mobile only content -->
-            <nav class="nav-secondary-sub desktop-hidden">
-                <ul>
-                    <li><a href="#">Contact us</a>
-
-                    </li>
-                    <li><a href="#">Branch & ATM locator</a>
-
-                    </li>
-                </ul>
-            </nav>
-            <!-- Country link list -->
-            <div class="country-change">
-                <ul class="list-unstyled">
-                    <li> <a href="#" class="country-name">
-
-                            <i class="icon-flag"><img src="images/flags/flag-germany.png" alt="Germany"></i>
-
-                            Germany
+                            <span class="link-arrow"><i class="icon-right-arrow"></i></span>
 
                         </a>
-                    </li>
-                    <li><a href="#" class="country-name">
+                                    </div>
+                                    <div class="col-6 col-md-3"> <a href="#" class="link-list-item">
 
-                            <i class="icon-flag"><img src="images/flags/flag-turkey.png" alt="Germany"></i>
+                            <div class="link-icon">
 
-                            Turkey
+                                <i class="fa-solid fa-file-lines"></i>
+
+                            </div>
+
+                            <p>Consulta le tariffe</p>
+
+                            <span class="link-arrow"><i class="icon-right-arrow"></i></span>
 
                         </a>
-                    </li>
-                    <li><a href="#" class="country-name">
+                                    </div>
+                                    <div class="col-6 col-md-3"> <a href="#" class="link-list-item">
 
-                            <i class="icon-flag"><img src="images/flags/flag-malasia.png" alt="Germany"></i>
+                            <div class="link-icon">
 
-                            Malaysia
+                                <i class="fa-solid fa-folder"></i>
+
+                            </div>
+
+                            <p>Fatture e pagamenti</p>
+
+                            <span class="link-arrow"><i class="icon-right-arrow"></i></span>
 
                         </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- End: Mobile only content-->
-            <div class="lang-switch"> <a href="#">عربي</a>
-            </div>
-            </div>
-            </div>
-        </header>
-        <!-- Main Content Section -->
-        <main>
-            <!-- Component: Hero Banner -->
-            <section class="lp-hero-banner" role="banner" aria-labelledby="hero-banner">
-                <div class="swiper-container hero-slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <!-- banner image -->
-                            <div class="lp-hero-banner-bg with-overlay">
-                                <picture class="lp-hero-banner-bg__image">
-                                    <source media="(max-width: 768px)" srcset="images/banner/banner-bg-mobile.jpg">
-                                        <source media="(min-width: 769px)" srcset="images/banner/banner-bg-desktop.jpg">
-                                            <img src="images/banner/banner-bg-desktop.jpg" alt="Bnner image">
-                                </picture>
-                                <!-- Banner overlay graphic -->
-                                <div class="lp-hero-banner-graphic hidden-in-desktop" aria-hidden="true">
-                                    <svg viewBox="0 0 662 924" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    preserveAspectRatio="xMidYMid meet">
-                                        <g clip-path="url(#clip)">
-                                            <path d="M451 470.667c-25.2 32.4-309.5 314.5-451 453h661.5v-922l-46-13c-76.667-76.5-206.9-181-114.5 13 115.5 242.5-18.5 428.5-50 469Z"
-                                            fill="#027F65" stroke="#027F65"></path>
-                                            <path d="M286.706 925.174C270.736 805.256 529.581 557.092 661 448v477.174l-34.435 55.462c-106.632 31.474-323.889 64.454-339.859-55.462Z"
-                                            fill="#33AD2D"></path>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip">
-                                                <path fill="#fff" d="M0 0h662v924H0z"></path>
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div>
-                            </div>
-                            <!-- Banner content -->
-                            <div class="lp-hero-banner-content">
-                                <div class="container">
-                                    <div class="lp-hero-banner-content-inside">
-                                        <div class="hero-content-texts">
-                                             <h1><span>Integrated and innovative solutions of banking services Integrated and
-
-                                        innovative
-
-                                        solutions of banking services</span></h1>
-                                            <p>This account provides most of bank services for individuals, corporations
-                                                and organizations. This account provides most of bank services for individuals,
-                                                corporations and organizations.</p>
-                                        </div>
-                                        <div class="banner-cta"> <a href="#" class="btn-primary-arrow" aria-label="Learn more about banking services"><span>Learn
-
-                                        more</span></a> <a href="#" class="btn-primary-arrow"
-                                            aria-label="Learn more about banking services"><span>Learn
-
-                                        more</span></a>
-                                        </div>
                                     </div>
-                                </div>
+                                    <div class="col-6 col-md-3"> <a href="#" class="link-list-item">
+
+                            <div class="link-icon">
+
+                                <i class="fa-solid fa-triangle-exclamation"></i>
+
                             </div>
-                            <!-- Banner overlay graphic -->
-                            <div class="lp-hero-banner-graphic hidden-in-mobile" aria-hidden="true">
-                                <svg viewBox="0 0 662 924" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                preserveAspectRatio="xMidYMid meet">
-                                    <g clip-path="url(#clip)">
-                                        <path d="M451 470.667c-25.2 32.4-309.5 314.5-451 453h661.5v-922l-46-13c-76.667-76.5-206.9-181-114.5 13 115.5 242.5-18.5 428.5-50 469Z"
-                                        fill="#027F65" stroke="#027F65"></path>
-                                        <path d="M286.706 925.174C270.736 805.256 529.581 557.092 661 448v477.174l-34.435 55.462c-106.632 31.474-323.889 64.454-339.859-55.462Z"
-                                        fill="#33AD2D"></path>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip">
-                                            <path fill="#fff" d="M0 0h662v924H0z"></path>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <!-- banner image -->
-                            <div class="lp-hero-banner-bg with-overlay">
-                                <picture class="lp-hero-banner-bg__image">
-                                    <source media="(max-width: 768px)" srcset="images/banner/banner-bg-mobile.jpg">
-                                        <source media="(min-width: 769px)" srcset="images/banner/banner-bg-desktop.jpg">
-                                            <img src="images/banner/banner-bg-desktop.jpg" alt="Bnner image">
-                                </picture>
-                                <!-- Banner overlay graphic -->
-                                <div class="lp-hero-banner-graphic hidden-in-desktop" aria-hidden="true">
-                                    <svg viewBox="0 0 662 924" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    preserveAspectRatio="xMidYMid meet">
-                                        <g clip-path="url(#clip)">
-                                            <path d="M451 470.667c-25.2 32.4-309.5 314.5-451 453h661.5v-922l-46-13c-76.667-76.5-206.9-181-114.5 13 115.5 242.5-18.5 428.5-50 469Z"
-                                            fill="#027F65" stroke="#027F65"></path>
-                                            <path d="M286.706 925.174C270.736 805.256 529.581 557.092 661 448v477.174l-34.435 55.462c-106.632 31.474-323.889 64.454-339.859-55.462Z"
-                                            fill="#33AD2D"></path>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip">
-                                                <path fill="#fff" d="M0 0h662v924H0z"></path>
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div>
-                            </div>
-                            <!-- Banner content -->
-                            <div class="lp-hero-banner-content">
-                                <div class="container">
-                                    <div class="lp-hero-banner-content-inside">
-                                        <div class="hero-content-texts">
-                                             <h1><span>Integrated and innovative solutions of banking services Integrated and
 
-                                        innovative
+                            <p>Segnala un guasto</p>
 
-                                        solutions of banking services</span></h1>
-                                            <p>This account provides most of bank services for individuals, corporations
-                                                and organizations. This account provides most of bank services for individuals,
-                                                corporations and organizations.</p>
-                                        </div>
-                                        <div class="banner-cta"> <a href="#" class="btn-primary-arrow" aria-label="Learn more about banking services"><span>Learn
+                            <span class="link-arrow"><i class="icon-right-arrow"></i></span>
 
-                                        more</span></a> <a href="#" class="btn-primary-arrow"
-                                            aria-label="Learn more about banking services"><span>Learn
-
-                                        more</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Banner overlay graphic -->
-                            <div class="lp-hero-banner-graphic hidden-in-mobile" aria-hidden="true">
-                                <svg viewBox="0 0 662 924" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                preserveAspectRatio="xMidYMid meet">
-                                    <g clip-path="url(#clip)">
-                                        <path d="M451 470.667c-25.2 32.4-309.5 314.5-451 453h661.5v-922l-46-13c-76.667-76.5-206.9-181-114.5 13 115.5 242.5-18.5 428.5-50 469Z"
-                                        fill="#027F65" stroke="#027F65"></path>
-                                        <path d="M286.706 925.174C270.736 805.256 529.581 557.092 661 448v477.174l-34.435 55.462c-106.632 31.474-323.889 64.454-339.859-55.462Z"
-                                        fill="#33AD2D"></path>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip">
-                                            <path fill="#fff" d="M0 0h662v924H0z"></path>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <!-- banner image -->
-                            <div class="lp-hero-banner-bg with-overlay">
-                                <picture class="lp-hero-banner-bg__image">
-                                    <source media="(max-width: 768px)" srcset="images/banner/banner-bg-mobile.jpg">
-                                        <source media="(min-width: 769px)" srcset="images/banner/banner-bg-desktop.jpg">
-                                            <img src="images/banner/banner-bg-desktop.jpg" alt="Bnner image">
-                                </picture>
-                                <!-- Banner overlay graphic -->
-                                <div class="lp-hero-banner-graphic hidden-in-desktop" aria-hidden="true">
-                                    <svg viewBox="0 0 662 924" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                    preserveAspectRatio="xMidYMid meet">
-                                        <g clip-path="url(#clip)">
-                                            <path d="M451 470.667c-25.2 32.4-309.5 314.5-451 453h661.5v-922l-46-13c-76.667-76.5-206.9-181-114.5 13 115.5 242.5-18.5 428.5-50 469Z"
-                                            fill="#027F65" stroke="#027F65"></path>
-                                            <path d="M286.706 925.174C270.736 805.256 529.581 557.092 661 448v477.174l-34.435 55.462c-106.632 31.474-323.889 64.454-339.859-55.462Z"
-                                            fill="#33AD2D"></path>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip">
-                                                <path fill="#fff" d="M0 0h662v924H0z"></path>
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </div>
-                            </div>
-                            <!-- Banner overlay graphic -->
-                            <div class="lp-hero-banner-graphic hidden-in-mobile" aria-hidden="true">
-                                <svg viewBox="0 0 662 924" fill="none" xmlns="http://www.w3.org/2000/svg"
-                                preserveAspectRatio="xMidYMid meet">
-                                    <g clip-path="url(#clip)">
-                                        <path d="M451 470.667c-25.2 32.4-309.5 314.5-451 453h661.5v-922l-46-13c-76.667-76.5-206.9-181-114.5 13 115.5 242.5-18.5 428.5-50 469Z"
-                                        fill="#027F65" stroke="#027F65"></path>
-                                        <path d="M286.706 925.174C270.736 805.256 529.581 557.092 661 448v477.174l-34.435 55.462c-106.632 31.474-323.889 64.454-339.859-55.462Z"
-                                        fill="#33AD2D"></path>
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip">
-                                            <path fill="#fff" d="M0 0h662v924H0z"></path>
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="lp-accessibility-info">
-                <div class="container"> <a href="#" class="btn-wcag">
-
-            <div class="btn-wcag-inner">
-
-                <icon class="icon-small"><img src="images/icon-volume.svg" alt="WCAG icon"></icon>
-
-                <span>Listen</span>
-
-            </div>
-
-        </a>
-                </div>
-            </section>
-            <!-- Component: Services and products -->
-            <section class="lp-services bg-grey">
-                <div class="container">
-                    <div class="header-block">
-                         <h2>Our services & products</h2>
-                    </div>
-                    <div class="width-wrapper">
-                        <div class="two-column-card-listing">
-                            <!-- Single item --> <a href="#" class="card-with-icon">
-
-                    <i class="icon">
-
-                        <img src="images/icons/icon-account.svg" alt="Icon Account">
-
-                    </i>
-
-                    <h4>Accounts</h4>
-
-                    <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                </a>
-                            <!-- Single item --> <a href="#" class="card-with-icon">
-
-                    <i class="icon">
-
-                        <img src="images/icons/icon-cards.svg" alt="Icon Cards">
-
-                    </i>
-
-                    <h4>Cards</h4>
-
-                    <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                </a>
-                            <!-- Single item --> <a href="#" class="card-with-icon">
-
-                    <i class="icon">
-
-                        <img src="images/icons/icon-financing.svg" alt="Icon Financing">
-
-                    </i>
-
-                    <h4>Financing</h4>
-
-                    <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                </a>
-                            <!-- Single item --> <a href="#" class="card-with-icon">
-
-                    <i class="icon">
-
-                        <img src="images/icons/icon-investment.svg" alt="Icon investment">
-
-                    </i>
-
-                    <h4>Investment</h4>
-
-                    <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon">
-
-                    </div>
-
-                </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Component: Two column content blocks -->
-            <section class="lp-zig-zag">
-                <div class="zigzag-block">
-                    <div class="zigzag-block--img">
-                        <img src="images/content-images/content -img-0.jpg" alt="Content image">
-                    </div>
-                    <div class="zigzag-block--content">
-                        <div class="zigzag-block--content-inner">
-                            <div class="header-block">
-                                 <h2>KFH Visa Signature</h2>
-                            </div>
-                            <p>Kuwait Finance House is pleased to present the “KFH” Visa Signature Credit
-                                Card which offers you a unique experience for enjoying a world of exclusive
-                                privileges, luxury and convenience that are carefully selected and tailored
-                                to suit your lifestyle.</p>
-                            <div class="btn-holder"> <a href="#" class="btn-primary" data-text="Learn more"><span>Learn more</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="zigzag-block bg-grey">
-                    <div class="zigzag-block--content">
-                        <div class="zigzag-block--content-inner">
-                            <div class="header-block">
-                                 <h2>AlRabeh account</h2>
-                            </div>
-                            <p>Open AlRabeh account and you will have the chance to win 1,500 Kuwaiti
-                                Dinars weekly,1 kg of Gold monthly and 25,000 Kuwaiti Dinars quarterly.</p>
-                            <div
-                            class="btn-holder"> <a href="#" class="btn-primary" data-text="Learn more"><span>Learn more</span></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="zigzag-block--img">
-                    <img src="images/content-images/content -img-02.jpg" alt="Content image">
-                </div>
-                </div>
-            </section>
-            <!-- Component: Download app block -->
-            <section class="lp-app-download bg-green">
-                <div class="container">
-                    <div class="two-cols">
-                        <div class="two-cols-left app-screen-image mobile-hidden">
-                            <img src="images/content-images/mobile-image.png" alt="Mobile app">
-                        </div>
-                        <div class="two-cols-right">
-                            <div class="header-block">
-                                 <h2>KFH Online application for smartphones with you
-
-                        all the times...!</h2>
-                            </div>
-                            <!-- Start: Mobile only image -->
-                            <div class="app-screen-image mobile-only">
-                                <img src="images/content-images/mobile-image-small.png" alt="Mobile app">
-                            </div>
-                            <!-- End:mobile only image -->
-                            <ul class="listing-two-columns">
-                                <li>Open new account</li>
-                                <li>Cardless cash withdrawal</li>
-                                <li>Open fixed deposits</li>
-                                <li>Request Credit Card</li>
-                            </ul>
-                            <div class="download-info mobile-hidden">
-                                <div class="qr-code">
-                                    <img src="images/content-images/QR-Code.png" alt="QR code image"> <span>Scan the QR</span>
-                                </div>
-                                <div class="download-info-links">
-                                    <ul class="list-unstyled">
-                                        <li><a href="#"> <img src="images/content-images/google-pay.svg"
-
-                                        alt="Available on Google Play"></a>
-                                        </li>
-                                        <li><a href="#"><img src="images/content-images/app-store.png"
-
-                                        alt="Available on App Store"></a>
-
-                                        </li>
-                                        <li><a href="#"><img src="images/content-images/huawei-appgallery.svg"
-
-                                        alt="Available on App Store"></a>
-
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="download-info mobile-only">
-                                <div class="btn-holder"> <a href="#" class="btn-primary"><span>Download now</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Component: Services and tools - Tabbed content -->
-            <Section class="lp-tab-block bg-grey">
-                <div class="container">
-                    <!-- heading block -->
-                    <div class="header-block">
-                         <h2>A collection of services and tools to
-
-                meet your requirements</h2>
-                    </div>
-                    <!-- tab group -->
-                    <div class="tabs">
-                        <!-- tab header -->
-                        <ul class="tab-list" role="tablist" aria-labelledby="tablist-title">
-                            <li class="tab-item" role="presentation">
-                                <button id="tab1" class="tab" role="tab" aria-selected="true" aria-controls="panel1"
-                                tabindex="-1">Announcements</button>
-                            </li>
-                            <li class="tab-item" role="presentation">
-                                <button id="tab2" class="tab" role="tab" aria-selected="false" aria-controls="panel2">Profits</button>
-                            </li>
-                            <li class="tab-item" role="presentation">
-                                <button id="tab3" class="tab" role="tab" aria-selected="false" aria-controls="panel3"
-                                tabindex="-1">Reports</button>
-                            </li>
-                            <li class="tab-item" role="presentation">
-                                <button id="tab4" class="tab" role="tab" aria-selected="false" aria-controls="panel4"
-                                tabindex="-1">Calculator</button>
-                            </li>
-                        </ul>
-                        <!-- tab details -->
-                        <!-- Tab 1 -content -->
-                        <div id="panel1" class="tab-panel" role="tabpanel" aria-labelledby="tab1"
-                        tabindex="0" aria-hidden="false">
-                            <div class="two-column-card-listing">
-                                <!-- Single item --> <a href="#" class="card-with-icon">
-
-                        <i class="icon">
-
-                            <img src="images/icons/icon-list.svg" alt="Icon list">
-
-                        </i>
-
-                        <h4>Clarification regarding "Zakat" on KFH share</h4>
-
-                        <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                    </a>
-                                <!-- Single item --> <a href="#" class="card-with-icon">
-
-                        <i class="icon">
-
-                            <img src="images/icons/icon-list.svg" alt="Icon list">
-
-                        </i>
-
-                        <h4>In respect of the proposed Acquisition by KFH K.S.C
-
-                            of 100% of the issued</h4>
-
-                        <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                    </a>
-                                <!-- Single item --> <a href="#" class="card-with-icon">
-
-                        <i class="icon">
-
-                            <img src="images/icons/icon-list.svg" alt="Icon list">
-
-                        </i>
-
-                        <h4>Report about creating the world's leading islamic bank</h4>
-
-                        <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                    </a>
-                                <!-- Single item --> <a href="#" class="card-with-icon">
-
-                        <i class="icon">
-
-                            <img src="images/icons/icon-list.svg" alt="Icon list">
-
-                        </i>
-
-                        <h4>Updating civil ID data</h4>
-
-                        <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                    </a>
-                            </div>
-                        </div>
-                        <!-- Tab 2 -content -->
-                        <div id="panel2" class="tab-panel" role="tabpanel" aria-labelledby="tab2"
-                        tabindex="0" aria-hidden="true">
-                            <!-- slider -->
-                            <div class="tab-slider-wrapper">
-                                <div class="swiper tab-slider width-adjusted" data-name="sliderOne">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <!-- card --> <a href="#" class="card-generic">
-
-                                    <div class="card-generic--image">
-
-                                        <img src="images/content-images/profit-card-img-01.jpg"
-
-                                            alt="Profit Announcements">
-
-                                    </div>
-
-                                    <div class="card-generic--content">
-
-                                        <h5>"Profit" Announcements for 2024</h5>
-
-                                        <div class="content--link"> <span class="link-with-arrow-green">Read more</span>
-
-                                        </div>
-
-                                    </div>
-
-                                </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <!-- card --> <a href="#" class="card-generic">
-
-                                    <div class="card-generic--image">
-
-                                        <img src="images/content-images/profit-card-img-03.jpg"
-
-                                            alt="Profit Announcements">
-
-                                    </div>
-
-                                    <div class="card-generic--content">
-
-                                        <h5>Financial Results of 2023</h5>
-
-                                        <div class="content--link"> <span class="link-with-arrow-green">Read more</span>
-
-                                        </div>
-
-                                    </div>
-
-                                </a>
-                                        </div>
+                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Tab 3 -content -->
-                        <div id="panel3" class="tab-panel" role="tabpanel" aria-labelledby="tab3"
-                        tabindex="0" aria-hidden="true">
-                            <!-- slider -->
-                            <div class="tab-slider-wrapper">
-                                <div class="swiper tab-slider width-adjusted" data-name="sliderTwo">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide"> <a href="#" class="card-generic">
-
-                                    <div class="card-generic--image">
-
-                                        <img src="images/content-images/report-card-img-01.jpg"
-
-                                            alt="Annual Report 2023">
-
-                                    </div>
-
-                                    <div class="card-generic--content">
-
-                                        <h5>Annual Report 2023</h5>
-
-                                        <div class="content--link"> <span class="link-with-arrow-green">Read more</span>
-
-                                        </div>
-
-                                    </div>
-
-                                </a>
-                                        </div>
-                                        <div class="swiper-slide"> <a href="#" class="card-generic">
-
-                                    <div class="card-generic--image">
-
-                                        <img src="images/content-images/report-card-img-02.jpg"
-
-                                            alt="Financial Results of 2023">
-
-                                    </div>
-
-                                    <div class="card-generic--content">
-
-                                        <h5>Financial Results of 2023</h5>
-
-                                        <div class="content--link"> <span class="link-with-arrow-green">Read more</span>
-
-                                        </div>
-
-                                    </div>
-
-                                </a>
-                                        </div>
-                                        <div class="swiper-slide"> <a href="#" class="card-generic">
-
-                                    <div class="card-generic--image">
-
-                                        <img src="images/content-images/report-card-img-03.jpg"
-
-                                            alt="Year end financial statements 2022">
-
-                                    </div>
-
-                                    <div class="card-generic--content">
-
-                                        <h5>Year end financial statements 2022</h5>
-
-                                        <div class="content--link"> <span class="link-with-arrow-green">Read more</span>
-
-                                        </div>
-
-                                    </div>
-
-                                </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Tab 4 -content -->
-                        <div id="panel4" class="tab-panel" role="tabpanel" aria-labelledby="tab4"
-                        tabindex="0" aria-hidden="true">
-                            <div class="two-column-card-listing">
-                                <!-- Single item --> <a href="#" class="card-with-icon">
-
-                        <i class="icon">
-
-                            <img src="images/icons/icon-calculator.svg" alt="Icon list">
-
-                        </i>
-
-                        <h4>Finance Calculator</h4>
-
-                        <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                    </a>
-                                <!-- Single item --> <a href="#" class="card-with-icon">
-
-                        <i class="icon">
-
-                            <img src="images/icons/icon-investment.svg" alt="Icon list">
-
-                        </i>
-
-                        <h4>Investment Plans Calculator</h4>
-
-                        <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                    </a>
-                                <!-- Single item --> <a href="#" class="card-with-icon">
-
-                        <i class="icon">
-
-                            <img src="images/icons/icon-calculator-zakat.svg" alt="Icon list">
-
-                        </i>
-
-                        <h4>Zakat Calculator</h4>
-
-                        <div class="icon-arrow"><img src="images/icon-arrow-green.svg" alt="Arrow icon"></div>
-
-                    </a>
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </Section>
-            <!-- Component: News listing -->
-            <section class="lp-news-block">
-                <div class="container">
-                    <!-- heading block -->
-                    <div class="header-block">
-                         <h2>In the news..</h2>
-                    </div>
-                    <div class="lp-news-slider-wrap">
-                        <div class="lp-news-slider">
-                            <div class="swiper-wrapper">
-                                <div class="lp-news-slider-slide swiper-slide">
-                                    <!-- news card -->
-                                    <div class="card-news">
-                                        <div class="card-news--image">
-                                            <img src="images/content-images/news-image-01.jpg" alt="News image">
+                </section>
+                <section class="news-listing">
+                    <div class="container">
+                        <div class="section-header">
+                             <h2>News</h2> <a href="#" class="text-link-arrow">Vedi tutte</a>
+                        </div>
+                        <div class="news-slider-wrap">
+                            <div class="news-slider">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card-news-item">
+                                            <div class="news-item-head"> <span class="tag-black">ELETTRICITÀ</span>  <span class="c-date">17 Lug 2025</span>
+                                            </div> <a href="#">
+
+                                <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+
+                            </a>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p> <a href="#" class="text-link">Leggi</a>
                                         </div>
-                                        <div class="card-news--content">
-                                            <div class="card-news--content--text">
-                                                 <h5>KFH wins “Best Treasury and Cash Management Bank” award by Global Finance</h5>
-                                                <p>For the second year consecutively, Kuwait Finance House (KFH) wins the
-                                                    “Best Tre</p>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-news-item">
+                                            <div class="news-item-head"> <span class="tag-black">ACQUA</span>  <span class="c-date">17 Lug 2025</span>
                                             </div>
-                                            <div class="card-news--content--link"> <a href="#" class="link-with-arrow-green">Read more</a>
+                                             <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p> <a href="#" class="text-link">Leggi</a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card-news-item">
+                                            <div class="news-item-head"> <span class="tag-black">GAS</span>  <span class="c-date">17 Lug 2025</span>
                                             </div>
+                                             <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p> <a href="#" class="text-link">Leggi</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="lp-news-slider-slide swiper-slide">
-                                    <!-- news card -->
-                                    <div class="card-news">
-                                        <div class="card-news--image">
-                                            <img src="images/content-images/news-image-02.jpg" alt="News image">
-                                        </div>
-                                        <div class="card-news--content">
-                                            <div class="card-news--content--text">
-                                                 <h5>KFH Capital Wins “Best for Fixed Income in Kuwait” Award</h5>
-                                                <p>KFH Capital, the investment arm of Kuwait Finance House (KFH) Group, has
-                                                    been awarded "Best for Fixed Income</p>
-                                            </div>
-                                            <div class="card-news--content--link"> <a href="#" class="link-with-arrow-green">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="lp-news-slider-slide swiper-slide">
-                                    <!-- news card -->
-                                    <div class="card-news">
-                                        <div class="card-news--image">
-                                            <img src="images/content-images/news-image-03.jpg" alt="News image">
-                                        </div>
-                                        <div class="card-news--content">
-                                            <div class="card-news--content--text">
-                                                 <h5>KFH announces the winners of Al-Rabeh draw</h5>
-                                                <p>Kuwait Finance House (KFH) announced the winners of the AlRabeh draw with
-                                                    20 customers winning cash prizes worth</p>
-                                            </div>
-                                            <div class="card-news--content--link"> <a href="#" class="link-with-arrow-green">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="lp-news-slider-slide swiper-slide">
-                                    <!-- news card -->
-                                    <div class="card-news">
-                                        <div class="card-news--image">
-                                            <img src="images/content-images/news-image-04.jpg" alt="News image">
-                                        </div>
-                                        <div class="card-news--content">
-                                            <div class="card-news--content--text">
-                                                 <h5>KFH Renews Strategic Partnership with Kuwait Sea Sport Club</h5>
-                                                <p>Kuwait Finance House (KFH) has renewed its strategic partnership with
-                                                    the Kuwait Sea Sport Club (KSSC) to support Kuwait’s national jet ski team
-                                                    in their participation in the World Championship held in the United ...</p>
-                                            </div>
-                                            <div class="card-news--content--link"> <a href="#" class="link-with-arrow-green">Read more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <!-- Pagination -->
+                                <div class="swiper-pagination"></div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="btn-holder text-center"> <a href="#" class="btn-primary" data-text="News archives"><span>News archives</span></a>
-                    </div>
-                </div>
-            </section>
-            <!-- Component: Finance report -->
-            <section class="lp-finance-report bg-green">
-                <div class="container">
-                    <div class="two-cols">
-                        <div class="two-cols-content">
-                            <!-- heading block -->
-                            <div class="header-block">
-                                 <h2>Treasury Daily Market Report</h2>
-                            </div>
-                            <!-- mobile hidden -->
-                            <div class="btn-holder mobile-hidden-xs"> <a href="#" class="btn-primary-arrow" aria-label="Learn more about banking services"><span>Learn
-
-                            more</span></a>
-                            </div>
-                        </div>
-                        <div class="two-cols-image">
-                            <img src="images/content-images/market-report-image.png" alt="Market report">
                         </div>
                         <!-- Mobile only -->
-                        <div class="btn-holder mobile-only-xs"> <a href="#" class="btn-primary-arrow" aria-label="Learn more about banking services"><span>Learn
-
-                        more</span></a>
+                        <div class="link-holder mobile-only"> <a href="#" class="text-link-arrow">Vedi tutte</a>
+                        </div>
+                </section>
+                <section class="program-listing">
+                    <div class="container">
+                        <div class="section-header">
+                             <h2>Interruzioni programmate</h2> <a href="#" class="text-link-arrow">Vedi tutte</a>
+                        </div>
+                        <div class="progaram-listing-grid">
+                            <div class="row">
+                                <!-- sigle card item -->
+                                <div class="col-md-4">
+                                    <div class="card-program">
+                                        <div class="icon-holder"> <i class="fa-solid fa-bell"></i>
+                                        </div>
+                                        <div class="card-program-content"> <span class="c-date">17 Lug 2025</span>
+                                             <h3>Interruzione di servizio</h3>
+                                            <p><i class="fa-regular fa-clock"></i>Lunedì 19 Mag 2025 08:00 - Venerdì
+                                                15 Mag 2026 17:00</p>
+                                            <p><i class="fa-solid fa-location-dot"></i>Mendrisio Via della Selva</p>
+                                            <a
+                                            href="#" class="text-link">Leggi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- sigle card item -->
+                                <div class="col-md-4">
+                                    <div class="card-program">
+                                        <div class="icon-holder"> <i class="fa-solid fa-user"></i>
+                                        </div>
+                                        <div class="card-program-content"> <span class="c-date">17 Lug 2025</span>
+                                             <h3>Avviso di cantiere stradale</h3>
+                                            <p><i class="fa-regular fa-clock"></i>Martedì 10 Giu 2025 08:00 - Giovedì
+                                                31 Lug 2025 17:00</p>
+                                            <p><i class="fa-solid fa-location-dot"></i>Mendrisio Via Praella</p> <a href="#"
+                                            class="text-link">Leggi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- sigle card item -->
+                                <div class="col-md-4">
+                                    <div class="card-program">
+                                        <div class="icon-holder"> <i class="fa-solid fa-house-flood-water"></i>
+                                        </div>
+                                        <div class="card-program-content"> <span class="c-date">17 Lug 2025</span>
+                                             <h3>Interruzione di servizio</h3>
+                                            <p><i class="fa-regular fa-clock"></i>Lunedì 19 Mag 2025 08:00 - Venerdì
+                                                17 Ott 2025 17:00</p>
+                                            <p><i class="fa-solid fa-location-dot"></i>Arzo Via Fossati, Via Castello,
+                                                Via Valascia, Canton Sott</p> <a href="#" class="text-link">Leggi</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Mobile only -->
+                        <div class="link-holder mobile-only"> <a href="#" class="text-link-arrow">Vedi tutte</a>
                         </div>
                     </div>
-                </div>
-            </section>
-        </main>
-        <footer class="site-footer bg-dark">
-            <!-- Footer:Top content -->
-            <div class="site-footer--top">
+                </section>
+                <section class="insights-block bg-light-grey">
+                    <div class="container">
+                        <div class="section-header">
+                             <h2>Approfondimenti</h2> <a href="#" class="text-link-arrow">Vedi tutte</a>
+                        </div>
+                        <!-- insights grid -->
+                        <div class="insights-grid">
+                            <div class="swiper insights-slider">
+                                <div class="swiper-wrapper row">
+                                    <!-- Slider item -->
+                                    <div class="swiper-slide col-md-6">
+                                        <div class="card-insights">
+                                            <div class="card-insights-img">
+                                                <picture>
+                                                    <source media="(max-width: 768px)" srcset="images/insights-img-01-mobile.jpg">
+                                                        <source media="(min-width: 769px)" srcset="images/insights-img-01-desktop.jpg">
+                                                            <img src="images/insights-img-01-desktop.jpg" alt="Card image">
+                                                </picture>
+                                                <div class="card-insights-img-overlay"> <span class="tag-green">
+
+                                        In evidenza
+
+                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="card-insights-content"> <span class="tag-black">ELETTRICITÀ</span>
+                                                 <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit varius enim in eros</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                                    enim in eros.</p> <a href="#" class="text-link">Leggi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slider item -->
+                                    <div class="swiper-slide col-md-3">
+                                        <div class="card-insights">
+                                            <div class="card-insights-img">
+                                                <picture>
+                                                    <source media="(max-width: 768px)" srcset="images/insights-img-02-mobile.jpg">
+                                                        <source media="(min-width: 769px)" srcset="images/insights-img-02-desktop.jpg">
+                                                            <img src="images/insights-img-02-desktop.jpg" alt="Card image">
+                                                </picture>
+                                            </div>
+                                            <div class="card-insights-content"> <span class="tag-black">ACQUA</span>
+                                                 <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur</p> <a href="#" class="text-link">Leggi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Slider item -->
+                                    <div class="swiper-slide col-md-3">
+                                        <div class="card-insights">
+                                            <div class="card-insights-img">
+                                                <picture>
+                                                    <source media="(max-width: 768px)" srcset="images/insights-img-03-mobile.jpg">
+                                                        <source media="(min-width: 769px)" srcset="images/insights-img-03-desktop.jpg">
+                                                            <img src="images/insights-img-03-desktop.jpg" alt="Card image">
+                                                </picture>
+                                            </div>
+                                            <div class="card-insights-content"> <span class="tag-black">GAS</span>
+                                                 <h4>Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+                                                <p>Lorem ipsum dolor sit amet, consectetur</p> <a href="#" class="text-link">Leggi</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <!-- Mobile only -->
+                        <div class="link-holder mobile-only"> <a href="#" class="text-link-arrow">Vedi tutte</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="two-cols-block">
+                    <div class="container">
+                        <div class="section-header">
+                             <h2>Energie rinnovabili</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="card-normal">
+                                    <div class="card-normal-img">
+                                        <img src="images/card-img-1.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-normal-content"> <span class="tag-black">ELETTRICITÀ</span>
+                                         <h4>Ecoprodotti</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> <a href="#"
+                                        class="text-link">Scopri</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-normal">
+                                    <div class="card-normal-img">
+                                        <img src="images/card-img-2.jpg" alt="Card image">
+                                    </div>
+                                    <div class="card-normal-content"> <span class="tag-black">GAS</span>
+                                         <h4>Biogas</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p> <a href="#"
+                                        class="text-link">Scopri</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="block-download-apps">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-7 col-lg-8">
+                                 <h2>Scarica l’App AIM</h2>
+                                <p>Offre una panoramica completa su tutti i servizi: dalla consultazione
+                                    dei propri consumi attraverso il portale MYAIM, all’avviso di interruzioni
+                                    pianificate o urgenti per acqua, elettricità o gas.</p>
+                                <div class="app-download-links"> <a href="#"><i class="icon"><img src="images/icon-google-play.svg" alt="Download app"></i></a>
+                                    <a
+                                    href="#"><i class="icon"><img src="images/icon-app-store.svg" alt="Download app"></i>
+
+                                        </a>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-lg-4">
+                                <div class="img-holder">
+                                    <img src="images/download-screen.png" alt="Download apps">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="partners-listing">
+                    <div class="container">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-md-3 heading-block">
+                                 <h2>I nostri partner</h2>
+                            </div>
+                            <div class="col-md-9 logo-block">
+                                <div class="partner-logos-list">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-3"> <a href="#" class="partner-logo">
+
+                                <img src="images/partner-logo-01.png" alt="partner logo">
+
+                            </a>
+                                        </div>
+                                        <div class="col-3"> <a href="#" class="partner-logo">
+
+                                <img src="images/partner-logo-02.png" alt="partner logo">
+
+                            </a>
+                                        </div>
+                                        <div class="col-3"> <a href="#" class="partner-logo">
+
+                                <img src="images/partner-logo-03.png" alt="partner logo">
+
+                            </a>
+                                        </div>
+                                        <div class="col-3"> <a href="#" class="partner-logo">
+
+                                <img src="images/partner-logo-04.png" alt="partner logo">
+
+                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- Site Footer Start -->
+            <footer class="site-footer bg-light-grey">
                 <div class="container">
-                    <div class="footer-cols-row">
-                        <!-- column -->
-                        <div class="footer-col">
-                            <div class="card-footer">
-                                <div class="card-footer-icon">
-                                    <img src="images/icons/icon-map.svg" alt="Map icon">
-                                </div>
-                                <div class="card-footer-content"> <a href="https://www.kfh.com/en/home/Corporate-Banking/Product-Services/Dedicated-Banking-branches-to-serve-you.html
+                    <!-- Footer Top Section -->
+                    <div class="site-footer-top">
+                        <div class="row">
+                            <!-- Footer Logo Column -->
+                            <div class="col-md-3 footer-col footer-col--logo"> <a href="#" class="footer-logo">
 
-                            " class="link-with-arrow-white">Visit Us</a>
-                                    <div
-                                    class="card-footer-content-inner">
-                                        <p>Locating a Kuwait Finance House branches or ATMs is now faster and simpler
-                                            with our ATM Branch Locator! Just enter a location near you to find nearest
-                                            Branch or ATM.</p>
+                        <img src="images/footer-logo.png" alt="AIM logo">
+
+                    </a>
+                            </div>
+                            <!-- Contact Info Column -->
+                            <div class="col-md-3 footer-col footer-col--contact">
+                                 <h5>CONTATTI</h5>
+                                <div class="footer-col-link"> <a href="tel:+41586883800" class="phone-number">+41 58 688 38 00</a>
+                                </div>
+                                <div class="footer-col-link"> <a href="emailto:info@aim.mendrisio.ch">info@aim.mendrisio.ch</a>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- column -->
-                    <div class="footer-col">
-                        <div class="card-footer">
-                            <div class="card-footer-icon">
-                                <img src="images/icons/icon-support.svg" alt="Map icon">
+                            <!-- Address Column -->
+                            <div class="col-md-3 footer-col footer-col--address">
+                                 <h5>DOVE TROVARCI</h5> <address>
+
+                        Via Municipio 13<br>
+
+                        6850 Mendrisio<br>
+
+                        Svizzera
+
+                    </address>
                             </div>
-                            <div class="card-footer-content"> <span class="link-with-arrow-white no-arrow">CALL US 24/7 "Batik telephone service"
+                            <!-- App Download Links Column -->
+                            <div class="col-md-3 footer-col footer-col--app-download">
+                                 <h5>SCARICA L’APP</h5>
+                                <div class="app-download-links"> <a href="#">
 
-                                1803333</span>
-                                <!-- <div class="card-footer-content-inner">
+                            <i class="icon">
 
-                                <div class="phone-info-list">
+                                <img src="images/icon-google-play-black.svg" alt="Download app">
 
-                                    <div class="phone-info">
+                            </i>
 
-                                        <p>USA & Canada</p>
+                        </a> <a href="#">
 
-                                        <a href="tel:1-800-818-8608">1-800-818-8608</a>
+                            <i class="icon">
 
-                                    </div>
+                                <img src="images/icon-app-store-black.svg"
 
-                                    <div class="phone-info">
+                                    alt="App Store logo icon in black for downloading AIM app, displayed in website footer with other contact and location information">
 
-                                        <p>France</p>
+                            </i>
 
-                                        <a href="tel:0805-086620">0805-086620</a>
-
-                                    </div>
-
-                                    <div class="phone-info">
-
-                                        <p>United Kingdom</p>
-
-                                        <a href="tel:0-800-014-8898">0-800-014-8898</a>
-
-                                    </div>
-
-                                    <div class="phone-info">
-
-                                        <p>Turkey</p>
-
-                                        <a href="tel:00908507712154">00908507712154</a>
-
-                                    </div>
-
-                                    <div class="phone-info">
-
-                                        <p>Germany</p>
-
-                                        <a href="tel:0800-181-7080">0800-181-7080</a>
-
-                                    </div>
-
-                                    <div class="phone-info">
-
-                                        <p>Spain</p>
-
-                                        <a href="tel:0800-181-7080">900-905-440</a>
-
-                                    </div>
-
-                                </div>
-
-                            </div> -->
-                                <div class="card-footer-content-inner">
-                                    <table border="0" cellpadding="1" cellspacing="1" class=" phone-info-list">
-                                        <tbody>
-                                            <tr>
-                                                <td class="phone-info">
-                                                    <p>USA &amp; Canada</p>
-                                                    <p><a href="tel:1-800-818-8608">1-800-818-8608</a>
-
-                                                    </p>
-                                                </td>
-                                                <td class="phone-info">
-                                                    <p>France</p>
-                                                    <p><a href="tel:0805-086620">0805-086620</a>
-
-                                                    </p>
-                                                </td>
-                                                <td class="phone-info">
-                                                    <p>United Kingdom</p>
-                                                    <p><a href="tel:0-800-014-8898">0-800-014-8898</a>
-
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="phone-info">
-                                                    <p>Turkey</p>
-                                                    <p><a href="tel:00908507712154">00908507712154</a>
-
-                                                    </p>
-                                                </td>
-                                                <td class="phone-info">
-                                                    <p>Germany</p>
-                                                    <p><a href="tel:0800-181-7080">0800-181-7080</a>
-
-                                                    </p>
-                                                </td>
-                                                <td class="phone-info">
-                                                    <p>Spain</p>
-                                                    <p><a href="tel:900-905-440">900-905-440</a>
-
-                                                    </p>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- <script>
-
-                                    document.querySelectorAll('.phone-info-list td').forEach((td) => {
-
-                                        td.classList.add('phone-info');
-
-                                    });
-
-                                </script> -->
+                        </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- column -->
-                    <div class="footer-col">
-                        <div class="card-footer">
-                            <div class="card-footer-icon">
-                                <img src="images/icons/icon-write-to-us.svg" alt="Map icon">
+                    <!-- Footer Bottom Section -->
+                    <div class="site-footer-bottom">
+                        <div class="row d-flex align-items-center">
+                            <!-- Copyright Column -->
+                            <div class="col-md-6 copy-right">
+                                <p>© 2025 AIM - AZIENDE INDUSTRIALI MENDRISIO</p>
                             </div>
-                            <div class="card-footer-content"> <a href="https://www.kfh.com/en/home/Personal/Ways-to-bank/contact.html
+                            <!-- Footer Navigation Column -->
+                            <div class="col-md-6 footer-navigation">
+                                <ul class="footer-nav">
+                                    <li><a href="#">Privacy POLICY</a>
 
-                            " class="link-with-arrow-white">Write to Us</a>
-                                <div
-                                class="card-footer-content-inner">
-                                    <p>You can contact us by clicking the ‘contact us’ button. We will get back
-                                        to you as soon as possible, whether you need to report a problem, have
-                                        inquiry or suggestion</p>
+                                    </li>
+                                    <li><a href="#">Termini E CONDIZIONI</a>
+
+                                    </li>
+                                    <li><a href="#">COOKIES SETTINGS</a>
+
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+            </footer>
+            <!-- Site Footer End -->
             </div>
-            </div>
-            </div>
-            <!-- Footer: Main content -->
-            <div class="site-footer--main">
-                <div class="container">
-                    <!--left: Company detail - -->
-                    <div class="footer-company-info"> <a href="#" class="footer-logo">
-
-                    <img src="images/site-logo-white.svg" alt="KFH logo">
-
-                </a>
-                        <p>Kuwait Finance House (KFH) is considered a pioneer in the banking phenomenon
-                            known as Islamic Finance or Shari’a Compliant Banking. KFH is the first
-                            Islamic bank established in 1977 in the State of Kuwait and today it’s
-                            one of the foremost Islamic financial institutions in the world.</p>
-                        <div
-                        class="footer-company-info--download">
-                             <h4>Download our App</h4>
-                            <ul class="list-unstyled">
-                                <li><a href="`#"><img src="images/Google play.svg" alt="Get it on Google play"></a>
-                                </li>
-                                <li><a href="`#"><img src="images/App store.svg" alt="Download on the App Store"></a>
-                                </li>
-                                <li><a href="`#"><img src="images/huawei-appgallery.svg" alt="Explore it on AppGallery"></a>
-                                </li>
-                            </ul>
-                    </div>
-                </div>
-                <!-- Right:footer links -->
-                <div class="footer-nav-links">
-                    <div class="footer-nav-links-wrap">
-                        <div class="footer-nav-col">
-                            <ul class="list-unstyled">
-                                <li><a href="#">About Kuwait Finance House</a>
-
-                                </li>
-                                <li><a href="">Board of Directors & Management</a>
-
-                                </li>
-                                <li><a href="">Kuwait Finance House Disclosures</a>
-
-                                </li>
-                                <li><a href="">Banking Awareness</a>
-
-                                </li>
-                                <li><a href="">Tariff List</a>
-
-                                </li>
-                                <li><a href="">KFH Reports</a>
-
-                                </li>
-                                <li><a href="">Financial Institutions</a>
-
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-nav-col">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Financial Reports</a>
-
-                                </li>
-                                <li><a href="">Local Real Estate Reports</a>
-
-                                </li>
-                                <li><a href="">Corporate Profile</a>
-
-                                </li>
-                                <li><a href="">Customer complaints</a>
-
-                                </li>
-                                <li><a href="">Information Security Guide</a>
-
-                                </li>
-                                <li><a href="">Careers</a>
-
-                                </li>
-                                <li><a href="">IBAN Number & Swift Code</a>
-
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="footer-nav-col">
-                            <ul class="list-unstyled">
-                                <li><a href="#">FAQs</a>
-
-                                </li>
-                                <li><a href="">Q&A On Tawarruq</a>
-
-                                </li>
-                                <li><a href="">Kuwait Banking Report</a>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile only download buttons -->
-                <div class="footer-company-info--download mobile-only">
-                     <h4>Download our App</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="`#"><img src="images/App store.svg" alt="Download on the App Store"></a>
-                        </li>
-                        <li><a href="`#"><img src="images/Google play.svg" alt="Get it on Google play"></a>
-                        </li>
-                        <li><a href="`#"><img src="images/huawei-appgallery.svg" alt="Explore it on AppGallery"></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-            <!-- Footer:bottom content-->
-            <div class="site-footer--bottom">
-                <div class="container">
-                    <div class="social-connects">
-                        <ul class="list-unstyled">
-                            <li> <a href="#">
-
-                            <i class="icon icon-facebook">
-
-                                <img src="images/icons/icon-facebook.png" alt="facebook">
-
-                            </i>
-
-                            Facebook
-
-                        </a>
-                            </li>
-                            <li> <a href="#">
-
-                            <i class="icon icon-x">
-
-                                <img src="images/icons/icon-x.png" alt="X">
-
-                            </i>
-
-                            X
-
-                        </a>
-                            </li>
-                            <li> <a href="#">
-
-                            <i class="icon icon-instagram">
-
-                                <img src="images/icons/icon-instagram.png" alt="Instagram">
-
-                            </i>
-
-                            Instagram
-
-                        </a>
-                            </li>
-                            <li> <a href="#">
-
-                            <i class="icon icon-linkedin">
-
-                                <img src="images/icons/icon-linkedin.png" alt="Linkedin">
-
-                            </i>
-
-                            Linkedin
-
-                        </a>
-                            </li>
-                            <li> <a href="#">
-
-                            <i class="icon icon-snapchat">
-
-                                <img src="images/icons/icon-snapchat.png" alt="Snapchat">
-
-                            </i>
-
-                            Snapchat
-
-                        </a>
-                            </li>
-                            <li> <a href="#">
-
-                            <i class="icon icon-youtube">
-
-                                <img src="images/icons/icon-youtube.png" alt="Youtube">
-
-                            </i>
-
-                            Youtube
-
-                        </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <p class="text-copy-right">COPYRIGHT © 2024 KUWAIT FINANCE HOUSE. ALL RIGHTS RESERVED</p>
-                    <div class="footer-quick-links">
-                        <div class="footer-quick-links-inner"> <a href="#">Terms & Condition</a>  <a href="#">Cookies</a><a href="#">Privacy Policy</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="./js/vendors/core.js"></script>
-        <script src="./js/header.js"></script>
-        <script src="./js/main.js"></script>
+            <!-- JS files -->
+            <script src="./js/vendors/core.js"></script>
+            <script src="./js/newScript.js"></script>
     </body>
 
 </html>
