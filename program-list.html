@@ -46,6 +46,8 @@
         <!-- Font Awesome Pro Kit -->
         <!-- <script src="https://kit.fontawesome.com/3f945969e5.js" crossorigin="anonymous"></script> -->
         <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link href="https://unpkg.com/filepond/dist/filepond.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/vendors.css" />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
@@ -59,7 +61,7 @@
                         <!--Header leftside content -->
                         <div class="header__logo-wrapper col-4"> <a href="#" class="header__logo">
 
-                    <img src="images/AIM-logo.png" alt="AIM logo" class="header__logo-image">
+                    <img src="images/AIM-logo.svg" alt="AIM logo" class="header__logo-image">
 
                 </a>
                         </div>
@@ -226,9 +228,142 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="nav-primary__item"> <a href="#">Gas</a>
+                                        <li class="nav-primary__item with-mega-menu"> <a href="#">Gas</a> <span class="menu-arrow"></span>
+                                            <!-- mega menu -->
+                                            <div class="nav-mega-menu">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 header-col header-col--intro">
+                                                             <h2>Acqua</h2>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                                                enim in eros elementum tristique.</p> <a href="#" class="text-link-arrow">Scopri di più</a>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-1">
+                                                             <h3>La mia rete</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Tariffe</a>
+
+                                                                </li>
+                                                                <li><a href="#">Nuove utenze e traslochi</a>
+
+                                                                </li>
+                                                                <li><a href="#">Lettura contatore</a>
+
+                                                                </li>
+                                                                <li><a href="#">Ecoprodotti</a>
+
+                                                                </li>
+                                                                <li><a href="#">Etichettatura</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-2">
+                                                             <h3>INFO E SERVIZI</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Comunità per il consumo proprio</a>
+
+                                                                </li>
+                                                                <li><a href="#">Consulenza energetica</a>
+
+                                                                </li>
+                                                                <li><a href="#">Contatori intelligenti (Smart meter)</a>
+
+                                                                </li>
+                                                                <li><a href="#">Reti di fibre ottiche per aziende</a>
+
+                                                                </li>
+                                                                <li><a href="#">Messa a terra</a>
+
+                                                                </li>
+                                                                <li><a href="#">Piano di illuminazione pubblica</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--card">
+                                                            <div class="card-image">
+                                                                <div class="card-image-img">
+                                                                    <img src="images/card-img-02.jpg" alt="Placeholder image">
+                                                                </div>
+                                                                <div class="card-image-content">
+                                                                     <h3>Comunità per il consumo proprio</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p> <a href="#" class="text-link">Leggi</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li class="nav-primary__item highlighted-link"> <a href="#">Assistenza e documenti</a>
+                                        <li class="nav-primary__item highlighted-link with-mega-menu"> <a href="#">Assistenza e documenti</a> <span class="menu-arrow"></span>
+                                            <!--
+                                            mega menu -->
+                                            <div class="nav-mega-menu">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 header-col header-col--intro">
+                                                             <h2>Acqua</h2>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                                                enim in eros elementum tristique.</p> <a href="#" class="text-link-arrow">Scopri di più</a>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-1">
+                                                             <h3>La mia rete</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Tariffe</a>
+
+                                                                </li>
+                                                                <li><a href="#">Nuove utenze e traslochi</a>
+
+                                                                </li>
+                                                                <li><a href="#">Lettura contatore</a>
+
+                                                                </li>
+                                                                <li><a href="#">Ecoprodotti</a>
+
+                                                                </li>
+                                                                <li><a href="#">Etichettatura</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-2">
+                                                             <h3>INFO E SERVIZI</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Comunità per il consumo proprio</a>
+
+                                                                </li>
+                                                                <li><a href="#">Consulenza energetica</a>
+
+                                                                </li>
+                                                                <li><a href="#">Contatori intelligenti (Smart meter)</a>
+
+                                                                </li>
+                                                                <li><a href="#">Reti di fibre ottiche per aziende</a>
+
+                                                                </li>
+                                                                <li><a href="#">Messa a terra</a>
+
+                                                                </li>
+                                                                <li><a href="#">Piano di illuminazione pubblica</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--card">
+                                                            <div class="card-image">
+                                                                <div class="card-image-img">
+                                                                    <img src="images/card-img-02.jpg" alt="Placeholder image">
+                                                                </div>
+                                                                <div class="card-image-content">
+                                                                     <h3>Comunità per il consumo proprio</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p> <a href="#" class="text-link">Leggi</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ul>
                                 </nav>
@@ -419,7 +554,7 @@
                             <!-- Footer Logo Column -->
                             <div class="col-md-3 footer-col footer-col--logo"> <a href="#" class="footer-logo">
 
-                        <img src="images/footer-logo.png" alt="AIM logo">
+                        <img src="images/footer-logo.svg" alt="AIM logo">
 
                     </a>
                             </div>
@@ -499,6 +634,8 @@
         <!-- JS files -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+        <script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
         <script src="./js/vendors/core.js"></script>
         <script src="./js/newScript.js"></script>
     </body>

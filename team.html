@@ -46,6 +46,8 @@
         <!-- Font Awesome Pro Kit -->
         <!-- <script src="https://kit.fontawesome.com/3f945969e5.js" crossorigin="anonymous"></script> -->
         <!-- Stylesheets -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+        <link href="https://unpkg.com/filepond/dist/filepond.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/vendors.css" />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
@@ -59,7 +61,7 @@
                         <!--Header leftside content -->
                         <div class="header__logo-wrapper col-4"> <a href="#" class="header__logo">
 
-                    <img src="images/AIM-logo.png" alt="AIM logo" class="header__logo-image">
+                    <img src="images/AIM-logo.svg" alt="AIM logo" class="header__logo-image">
 
                 </a>
                         </div>
@@ -226,9 +228,142 @@
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="nav-primary__item"> <a href="#">Gas</a>
+                                        <li class="nav-primary__item with-mega-menu"> <a href="#">Gas</a> <span class="menu-arrow"></span>
+                                            <!-- mega menu -->
+                                            <div class="nav-mega-menu">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 header-col header-col--intro">
+                                                             <h2>Acqua</h2>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                                                enim in eros elementum tristique.</p> <a href="#" class="text-link-arrow">Scopri di più</a>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-1">
+                                                             <h3>La mia rete</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Tariffe</a>
+
+                                                                </li>
+                                                                <li><a href="#">Nuove utenze e traslochi</a>
+
+                                                                </li>
+                                                                <li><a href="#">Lettura contatore</a>
+
+                                                                </li>
+                                                                <li><a href="#">Ecoprodotti</a>
+
+                                                                </li>
+                                                                <li><a href="#">Etichettatura</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-2">
+                                                             <h3>INFO E SERVIZI</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Comunità per il consumo proprio</a>
+
+                                                                </li>
+                                                                <li><a href="#">Consulenza energetica</a>
+
+                                                                </li>
+                                                                <li><a href="#">Contatori intelligenti (Smart meter)</a>
+
+                                                                </li>
+                                                                <li><a href="#">Reti di fibre ottiche per aziende</a>
+
+                                                                </li>
+                                                                <li><a href="#">Messa a terra</a>
+
+                                                                </li>
+                                                                <li><a href="#">Piano di illuminazione pubblica</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--card">
+                                                            <div class="card-image">
+                                                                <div class="card-image-img">
+                                                                    <img src="images/card-img-02.jpg" alt="Placeholder image">
+                                                                </div>
+                                                                <div class="card-image-content">
+                                                                     <h3>Comunità per il consumo proprio</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p> <a href="#" class="text-link">Leggi</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
-                                        <li class="nav-primary__item highlighted-link"> <a href="#">Assistenza e documenti</a>
+                                        <li class="nav-primary__item highlighted-link with-mega-menu"> <a href="#">Assistenza e documenti</a> <span class="menu-arrow"></span>
+                                            <!--
+                                            mega menu -->
+                                            <div class="nav-mega-menu">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 header-col header-col--intro">
+                                                             <h2>Acqua</h2>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius
+                                                                enim in eros elementum tristique.</p> <a href="#" class="text-link-arrow">Scopri di più</a>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-1">
+                                                             <h3>La mia rete</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Tariffe</a>
+
+                                                                </li>
+                                                                <li><a href="#">Nuove utenze e traslochi</a>
+
+                                                                </li>
+                                                                <li><a href="#">Lettura contatore</a>
+
+                                                                </li>
+                                                                <li><a href="#">Ecoprodotti</a>
+
+                                                                </li>
+                                                                <li><a href="#">Etichettatura</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--type-2">
+                                                             <h3>INFO E SERVIZI</h3>
+                                                            <ul class="header-list">
+                                                                <li><a href="#">Comunità per il consumo proprio</a>
+
+                                                                </li>
+                                                                <li><a href="#">Consulenza energetica</a>
+
+                                                                </li>
+                                                                <li><a href="#">Contatori intelligenti (Smart meter)</a>
+
+                                                                </li>
+                                                                <li><a href="#">Reti di fibre ottiche per aziende</a>
+
+                                                                </li>
+                                                                <li><a href="#">Messa a terra</a>
+
+                                                                </li>
+                                                                <li><a href="#">Piano di illuminazione pubblica</a>
+
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-lg-3  header-col header-col--card">
+                                                            <div class="card-image">
+                                                                <div class="card-image-img">
+                                                                    <img src="images/card-img-02.jpg" alt="Placeholder image">
+                                                                </div>
+                                                                <div class="card-image-content">
+                                                                     <h3>Comunità per il consumo proprio</h3>
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p> <a href="#" class="text-link">Leggi</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </li>
                                     </ul>
                                 </nav>
@@ -264,6 +399,536 @@
                         </div>
                     </div>
                 </section>
+                <section class="block-team-list">
+                    <div class="container">
+                        <!-- FAQ Listing -->
+                        <div class="row">
+                            <div class="col-lg-9 col-md-12 accordion-teams">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingOne">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+
+                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+                                Direzione
+
+                            </button>
+
+                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <p>Tempor sit pellentesque mattis egestas lectus quis. Vulputate tellus eget
+                                                                volutpat pharetra at.</p> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <ul>
+                                                                <li>Tempor sit pellentesque mattis egestas lectus quis.</li>
+                                                                <li>Vulputate tellus eget volutpat pharetra at.</li>
+                                                            </ul> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingTwo">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                                Servizi amministrativi
+
+                            </button>
+
+                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <p>Tempor sit pellentesque mattis egestas lectus quis. Vulputate tellus eget
+                                                                volutpat pharetra at.</p> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <ul>
+                                                                <li>Tempor sit pellentesque mattis egestas lectus quis.</li>
+                                                                <li>Vulputate tellus eget volutpat pharetra at.</li>
+                                                            </ul> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingThree">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                                Servizi tecnici
+
+                            </button>
+
+                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <p>Tempor sit pellentesque mattis egestas lectus quis. Vulputate tellus eget
+                                                                volutpat pharetra at.</p> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <ul>
+                                                                <li>Tempor sit pellentesque mattis egestas lectus quis.</li>
+                                                                <li>Vulputate tellus eget volutpat pharetra at.</li>
+                                                            </ul> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingFour">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+
+                                Servizi commerciali
+
+                            </button>
+
+                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                        data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <p>Tempor sit pellentesque mattis egestas lectus quis. Vulputate tellus eget
+                                                                volutpat pharetra at.</p> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <ul>
+                                                                <li>Tempor sit pellentesque mattis egestas lectus quis.</li>
+                                                                <li>Vulputate tellus eget volutpat pharetra at.</li>
+                                                            </ul> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingFive">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+
+                                Area Elettricità
+
+                            </button>
+
+                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                        data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <p>Tempor sit pellentesque mattis egestas lectus quis. Vulputate tellus eget
+                                                                volutpat pharetra at.</p> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <ul>
+                                                                <li>Tempor sit pellentesque mattis egestas lectus quis.</li>
+                                                                <li>Vulputate tellus eget volutpat pharetra at.</li>
+                                                            </ul> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingSix">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+
+                                Area Acqua
+
+                            </button>
+
+                        </h2>
+                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                        data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <p>Tempor sit pellentesque mattis egestas lectus quis. Vulputate tellus eget
+                                                                volutpat pharetra at.</p> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <ul>
+                                                                <li>Tempor sit pellentesque mattis egestas lectus quis.</li>
+                                                                <li>Vulputate tellus eget volutpat pharetra at.</li>
+                                                            </ul> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingSeven">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+
+                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+
+                                Area Gas
+
+                            </button>
+
+                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                                        data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <p>Tempor sit pellentesque mattis egestas lectus quis. Vulputate tellus eget
+                                                                volutpat pharetra at.</p> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <ul>
+                                                                <li>Tempor sit pellentesque mattis egestas lectus quis.</li>
+                                                                <li>Vulputate tellus eget volutpat pharetra at.</li>
+                                                            </ul> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                         <h2 class="accordion-header" id="headingEight">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+
+                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+
+                                Area Canalizzazioni
+
+                            </button>
+
+                        </h2>
+                                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                                        data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <p>Tempor sit pellentesque mattis egestas lectus quis. Vulputate tellus eget
+                                                                volutpat pharetra at.</p> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card-team-member"> <span class="sub-head">DIRETTORE</span>
+                                                             <h3>Gianpaolo Pontarolo</h3>
+                                                            <ul>
+                                                                <li>Tempor sit pellentesque mattis egestas lectus quis.</li>
+                                                                <li>Vulputate tellus eget volutpat pharetra at.</li>
+                                                            </ul> <a href="#" class="text-link-icon"><i
+
+                                                    class="fa-brands fa-linkedin"></i>Profilo
+
+                                                Linkedin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="block-two-cols">
+                    <div class="image-holder">
+                        <img src="images/two-col-img-03.jpg" alt="image">
+                    </div>
+                    <div class="content-holder">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                     <h2>Lavorare in AIM</h2>
+                                    <p>Essere parte del team AIM significa contribuire al successo di un'azienda
+                                        che investe nella crescita delle persone. Offriamo un percorso di sviluppo
+                                        professionale in un ambiente che valorizza l'innovazione, la collaborazione
+                                        e il benessere dei dipendenti. La nostra sede a Mendrisio rappresenta il
+                                        punto di incontro ideale tra opportunità professionali e qualità della
+                                        vita. Investiamo nelle persone perché il nostro successo dipende dal talento
+                                        del team. Se cerchi un'opportunità per sviluppare le tue competenze in
+                                        un contesto di qualità, scopri le nostre posizioni aperte.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="download-links-wrapper download-documents">
+                    <div class="container">
+                        <div class="section-header aligned-left">
+                             <h2>Approfondimenti</h2>
+                        </div>
+                        <div class="download-links">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <!-- download link --> <a href="#" class="link-full-width">
+
+                        <div class="link-icon-type"><i class="fa-regular fa-file-pdf"></i></div>
+
+                        <span class="link-text">
+
+                            Organigramma AIM</span>
+
+                        <div class="link-icon-action">
+
+                            <i class="fa-solid fa-arrows-up-to-line"></i>
+
+                        </div>
+
+                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="block-job-listing">
+                    <div class="container">
+                        <div class="section-header">
+                             <h2>Unisciti al nostro team</h2>
+                        </div>
+                        <!-- Job listing -->
+                        <div class="job-list">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <!-- Job listing single item -->
+                                    <div class="job-list-item"> <span class="job-date">11 luglio 2025</span>
+                                         <h3>Concorso per l’assunzione di un addetto o una addetta Comunicazione e social media al
+
+                            80-100%, a
+
+                            tempo indeterminato, presso il Settore Comunicazione della Città di Mendrisio</h3> <span class="job-time-stamp">In scadenza il: 11/08/2025 ore 16:00</span>
+                                        <p>PMi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse
+                                            morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit
+                                            sit. Tellus aliquam enim urna, etiam. Mauris <strong>posuere vulputate</strong> arcu
+                                            amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id. Eget quis
+                                            mi enim, leo lacinia pharetra, semper.</p>
+                                        <div class="job-list-links">
+                                            <!-- download link --> <a href="#" class="link-full-width">
+
+                                <div class="link-icon-type"><i class="fa-regular fa-file-pdf"></i></div>
+
+                                <span class="link-text">
+
+                                    Allegato 1</span>
+
+                                <div class="link-icon-action">
+
+                                    <i class="fa-solid fa-arrows-up-to-line"></i>
+
+                                </div>
+
+                            </a>
+                                            <!-- download link --> <a href="#" class="link-full-width">
+
+                                <div class="link-icon-type"><i class="fa-regular fa-file-pdf"></i></div>
+
+                                <span class="link-text">
+
+                                    Allegato 2</span>
+
+                                <div class="link-icon-action">
+
+                                    <i class="fa-solid fa-arrows-up-to-line"></i>
+
+                                </div>
+
+                            </a>
+                                        </div> <a href="#" class="btn btn-primary btn-with-icon">Candidati ora<i
+
+                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                    <!-- Job listing single item -->
+                                    <div class="job-list-item"> <span class="job-date">11 luglio 2025</span>
+                                         <h3>Concorso per l’assunzione di un addetto o una addetta Comunicazione e social media al
+
+                            80-100%, a
+
+                            tempo indeterminato, presso il Settore Comunicazione della Città di Mendrisio</h3> <span class="job-time-stamp">In scadenza il: 11/08/2025 ore 16:00</span>
+                                        <p>PMi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse
+                                            morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit
+                                            sit. Tellus aliquam enim urna, etiam. Mauris <strong>posuere vulputate</strong> arcu
+                                            amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id. Eget quis
+                                            mi enim, leo lacinia pharetra, semper.</p>
+                                        <div class="job-list-links">
+                                            <!-- download link --> <a href="#" class="link-full-width">
+
+                                <div class="link-icon-type"><i class="fa-regular fa-file-pdf"></i></div>
+
+                                <span class="link-text">
+
+                                    Allegato 1</span>
+
+                                <div class="link-icon-action">
+
+                                    <i class="fa-solid fa-arrows-up-to-line"></i>
+
+                                </div>
+
+                            </a>
+                                        </div> <a href="#" class="btn btn-primary btn-with-icon">Scarica il pdf<i
+
+                                class="fa-solid fa-arrows-up-to-line"></i></a>
+                                    </div>
+                                    <!-- Job listing single item -->
+                                    <div class="job-list-item"> <span class="job-date">11 luglio 2025</span>
+                                         <h3>Concorso per l’assunzione di un addetto o una addetta Comunicazione e social media al
+
+                            80-100%, a
+
+                            tempo indeterminato, presso il Settore Comunicazione della Città di Mendrisio</h3> <span class="job-time-stamp">In scadenza il: 11/08/2025 ore 16:00</span>
+                                        <p>PMi tincidunt elit, id quisque ligula ac diam, amet. Vel etiam suspendisse
+                                            morbi eleifend faucibus eget vestibulum felis. Dictum quis montes, sit
+                                            sit. Tellus aliquam enim urna, etiam. Mauris <strong>posuere vulputate</strong> arcu
+                                            amet, vitae nisi, tellus tincidunt. At feugiat sapien varius id. Eget quis
+                                            mi enim, leo lacinia pharetra, semper.</p>
+                                        <div class="job-list-links">
+                                            <!-- download link --> <a href="#" class="link-full-width">
+
+                                <div class="link-icon-type"><i class="fa-regular fa-file-pdf"></i></div>
+
+                                <span class="link-text">
+
+                                    Allegato 1</span>
+
+                                <div class="link-icon-action">
+
+                                    <i class="fa-solid fa-arrows-up-to-line"></i>
+
+                                </div>
+
+                            </a>
+                                        </div> <a href="#" class="btn btn-primary btn-with-icon">Scarica il pdf<i
+
+                                class="fa-solid fa-arrows-up-to-line"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
             <!-- Site Footer Start -->
             <footer class="site-footer bg-light-grey">
@@ -274,7 +939,7 @@
                             <!-- Footer Logo Column -->
                             <div class="col-md-3 footer-col footer-col--logo"> <a href="#" class="footer-logo">
 
-                        <img src="images/footer-logo.png" alt="AIM logo">
+                        <img src="images/footer-logo.svg" alt="AIM logo">
 
                     </a>
                             </div>
@@ -354,6 +1019,8 @@
         <!-- JS files -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+        <script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
         <script src="./js/vendors/core.js"></script>
         <script src="./js/newScript.js"></script>
     </body>
