@@ -426,43 +426,43 @@
                                         <div class="form-group">
                                             <label for="quartiere" class="form-label">Quartiere*</label>
                                             <select class="form-select" id="quartiere" required>
-                                                <option selected>Seleziona</option>
-                                                <option value="centro">Centro</option>
-                                                <option value="nord">Nord</option>
+                                                <option value="">Seleziona</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
                                             </select>
                                         </div>
                                         <!-- Via -->
                                         <div class="form-group">
                                             <label for="via" class="form-label">Via</label>
-                                            <input type="text" class="form-control" id="via" placeholder="Inserisci via / indirizzo">
+                                            <input type="text" class="form-control" id="via" placeholder="Inserisci qui l’indirizzo">
                                         </div>
                                         <!-- Tipo di guasto -->
                                         <div class="form-group">
                                             <label class="form-label">Tipo di guasto<span>*</span>
 
                                             </label>
-                                            <div class="form-check">
+                                            <div class="form-check styled-radio">
                                                 <input class="form-check-input" type="radio" name="guasto" id="lampadaSpenta"
                                                 checked>
                                                 <label class="form-check-label" for="lampadaSpenta">Lampada spenta</label>
                                             </div>
-                                            <div class="form-check">
+                                            <div class="form-check styled-radio">
                                                 <input class="form-check-input" type="radio" name="guasto" id="piuLampadeSpente">
                                                 <label class="form-check-label" for="piuLampadeSpente">Più lampade spente</label>
                                             </div>
-                                            <div class="form-check">
+                                            <div class="form-check styled-radio">
                                                 <input class="form-check-input" type="radio" name="guasto" id="luceIntermittente">
                                                 <label class="form-check-label" for="luceIntermittente">Luce intermittente</label>
                                             </div>
-                                            <div class="form-check">
+                                            <div class="form-check styled-radio">
                                                 <input class="form-check-input" type="radio" name="guasto" id="accesaGiorno">
                                                 <label class="form-check-label" for="accesaGiorno">Accesa di giorno</label>
                                             </div>
-                                            <div class="form-check">
+                                            <div class="form-check styled-radio">
                                                 <input class="form-check-input" type="radio" name="guasto" id="sostegnoPericolante">
                                                 <label class="form-check-label" for="sostegnoPericolante">Sostegno pericolante</label>
                                             </div>
-                                            <div class="form-check">
+                                            <div class="form-check styled-radio">
                                                 <input class="form-check-input" type="radio" name="guasto" id="altro">
                                                 <label class="form-check-label" for="altro">Altro</label>
                                             </div>
@@ -471,44 +471,76 @@
                                         <div class="form-group">
                                             <label for="info" class="form-label">Informazioni supplementari</label>
                                             <textarea class="form-control" id="info"
-                                            rows="3"></textarea>
+                                            rows="3" placeholder="Inserisci qui le informazioni"></textarea>
                                         </div>
                                         <!-- Allegare fotografia -->
                                         <div class="form-group">
-                                            <label for="fileUpload" class="form-label">Allega fotografia</label>
-                                            <input type="file" class="filepond" id="fileUpload"
-                                            name="fileUpload" accept="image/png, image/jpeg" />
-                                            <div class="form-text">Formato .jpg/.jpeg/.png, massimo 5 MB</div>
+                                            <label for="fileUpload" class="form-label">Allega fotografia</label> <small class="text-muted d-block mb-2">(formato gif jpg jpeg png, massimo 5 MB)</small>
+                                            <input
+                                            type="file" class="filepond" id="fileUpload" multiple accept=".jpg,.jpeg,.png,.gif"
+                                            />
+                                            <!-- Custom text + icon template -->
+                                            <div class="upload-template" id="uploadTemplate"> <span class="upload-icon"><i class="fa-solid fa-cloud-arrow-up"></i></span>
+                                                <span
+                                                class="text-success fw-bold">Cliccate qui</span>per caricare il file
+                                                    <br>o trascinate il documento in quest’area</div>
                                         </div>
                                         <!-- I tuoi dati -->
                                          <h3>I tuoi dati</h3>
                                         <div class="row">
                                             <div class="col-md-6 mb-3">
-                                                <label for="nome" class="form-label">Nome*</label>
-                                                <input type="text" class="form-control" id="nome" required>
+                                                <label for="nome" class="form-label">Nome<span>*</span>
+
+                                                </label>
+                                                <input type="text" class="form-control" id="nome" placeholder="Inserisci qui il tuo nome"
+                                                required>
                                             </div>
                                             <div class="col-md-6 mb-3">
-                                                <label for="cognome" class="form-label">Cognome*</label>
-                                                <input type="text" class="form-control" id="cognome" required>
+                                                <label for="cognome" class="form-label">Cognome<span>*</span>
+
+                                                </label>
+                                                <input type="text" class="form-control" placeholder="Inserisci qui il tuo cognome"
+                                                id="cognome" required>
                                             </div>
                                         </div>
                                         <!-- I tuoi recapiti -->
                                          <h3>I tuoi recapiti</h3>
-                                        <div class="form-group">
-                                            <label for="email" class="form-label">Email*</label>
-                                            <input type="email" class="form-control" id="email" required>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="telefono" class="form-label">Telefono*</label>
-                                            <div class="input-group"> <span class="input-group-text">+41</span>
-                                                <input type="tel" class="form-control"
-                                                id="telefono" required>
+                                        <p>Inserisci uno dei recapiti qui sotto per essere contattato. Ti chiederemo
+                                            maggiori informazioni in caso di necessità e ti terremo aggiornato sulla
+                                            risoluzione del problema.</p>
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="email" class="form-label">Email<span>*</span>
+
+                                                    </label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Inserisci qui la tua email"
+                                                    required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <div class="form-group">
+                                                    <label for="telefono" class="form-label">Telefono*</label>
+                                                    <div class="input-group">
+                                                        <select id="country" class="form-select">
+                                                            <option value="ch" data-dial="+41">Svizzera</option>
+                                                            <option value="it" data-dial="+39">Italia</option>
+                                                            <option value="de" data-dial="+49">Germania</option>
+                                                            <option value="fr" data-dial="+33">Francia</option>
+                                                        </select>
+                                                        <input id="dialCode" type="text" class="dial-code-box" value="+41" readonly>
+                                                        <input id="phone" type="tel" class="form-control" placeholder="Inserisci il numero">
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <!-- Privacy checkbox -->
-                                        <div class="mb-3 form-check">
+                                        <div class="mb-3 form-check styled-checkbox">
                                             <input class="form-check-input" type="checkbox" id="privacy" required>
-                                            <label class="form-check-label" for="privacy">I dati personali verranno trattati in maniera confidenziale...</label>
+                                            <label class="form-check-label" for="privacy">I suoi dati personali verranno trattati in maniera confidenziale ed utilizzati
+                                                unicamente per contattarla in caso di necessità di ulteriori informazioni
+                                                per intervenire tempestivamente in merito al guasto segnalatoci. Le AIM
+                                                la ringraziano per la sua preziosa collaborazione.</label>
                                         </div>
                                         <!-- Captcha placeholder -->
                                         <div class="mb-3">
