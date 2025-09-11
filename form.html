@@ -406,12 +406,11 @@
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="section-header  aligned-left">
-                                     <h2>Compila il formulario</h2>
-                                    <p>I campi contrassegnati da * sono obbligatori</p>
+                                     <h2>Compila il formulario</h2> <small class="sub-description">I campi contrassegnati da <span>*</span> sono obbligatori</small>
                                 </div>
                                 <!-- form -->
                                 <div class="block-form-inner">
-                                    <form action="#">
+                                    <form action="#" class="needs-validation">
                                          <h3>Segnalazione</h3>
                                         <!-- Numero punti luce -->
                                         <div class="form-group">
@@ -435,6 +434,7 @@
                                         <div class="form-group">
                                             <label for="via" class="form-label">Via</label>
                                             <input type="text" class="form-control" id="via" placeholder="Inserisci qui l’indirizzo">
+                                            <div class="valid-feedback">Looks good!</div>
                                         </div>
                                         <!-- Tipo di guasto -->
                                         <div class="form-group">
@@ -488,7 +488,7 @@
                                         <!-- I tuoi dati -->
                                          <h3>I tuoi dati</h3>
                                         <div class="row">
-                                            <div class="col-md-6 mb-3">
+                                            <div class="col-md-6">
                                                 <label for="nome" class="form-label">Nome<span>*</span>
 
                                                 </label>
@@ -509,7 +509,7 @@
                                             maggiori informazioni in caso di necessità e ti terremo aggiornato sulla
                                             risoluzione del problema.</p>
                                         <div class="row">
-                                            <div class="col-md-6 mb-3">
+                                            <div class="col-md-6">
                                                 <div class="form-group">
                                                     <label for="email" class="form-label">Email<span>*</span>
 
@@ -520,7 +520,9 @@
                                             </div>
                                             <div class="col-md-6 mb-3">
                                                 <div class="form-group">
-                                                    <label for="telefono" class="form-label">Telefono*</label>
+                                                    <label for="telefono" class="form-label">Telefono<span>*</span>
+
+                                                    </label>
                                                     <div class="input-group">
                                                         <select id="country" class="form-select">
                                                             <option value="ch" data-dial="+41">Svizzera</option>
@@ -535,7 +537,7 @@
                                             </div>
                                         </div>
                                         <!-- Privacy checkbox -->
-                                        <div class="mb-3 form-check styled-checkbox">
+                                        <div class="form-check styled-checkbox">
                                             <input class="form-check-input" type="checkbox" id="privacy" required>
                                             <label class="form-check-label" for="privacy">I suoi dati personali verranno trattati in maniera confidenziale ed utilizzati
                                                 unicamente per contattarla in caso di necessità di ulteriori informazioni
@@ -543,11 +545,18 @@
                                                 la ringraziano per la sua preziosa collaborazione.</label>
                                         </div>
                                         <!-- Captcha placeholder -->
-                                        <div class="mb-3">
-                                            <div class="border p-3 text-center bg-light">[ reCAPTCHA widget ]</div>
+                                        <div class="form-group">
+                                            <div class="captche-holder">
+                                                <div class="g-recaptcha" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                            </div>
                                         </div>
                                         <!-- Submit -->
-                                        <button type="submit" class="btn btn-success">Invia la segnalazione</button>
+                                        <div class="form-group form-submit d-flex justify-content-end">
+                                            <button type="submit" class="btn btn-primary"><span>Invia la segnalazione</span>
+
+                                            </button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
